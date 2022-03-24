@@ -1,0 +1,84 @@
+.screen-container {
+  .links {
+    position: fixed;
+    right: 20%;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    @include breakpoint(1000px) {
+      right: 10%;
+    }
+    @include breakpoint(800px) {
+      right: 5%;
+    }
+    @include breakpoint(600px) {
+      right: 0%;
+    }
+    /*550px --> ranger menu*/
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      li {
+        span {
+          cursor: pointer;
+          text-decoration: none;
+          color: $navColor;
+          /*#dedede*/
+          margin: 1.3rem 0;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: 0.1s;
+          opacity: 0;
+          transform: translateY(20px);
+          transform: scale(1);
+          animation: hide 0.5s forwards ease;
+          &:hover {
+            color: $black;
+            &::before {
+              width: 100%;
+              opacity: 1;
+            }
+          }
+          &:active {
+            color: $white;
+            transform: scale(0.9);
+            &::before {
+              background-color: $white;
+            }
+          }
+          &::before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 0;
+            height: 2px;
+            transition: 0.5s;
+            opacity: 0;
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen-container.active {
+  .links {
+    ul {
+      li {
+        span {
+          animation: appear 0.5s forwards ease var(--i);
+        }
+      }
+    }
+  }
+}

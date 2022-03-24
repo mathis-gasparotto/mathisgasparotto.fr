@@ -1,0 +1,21 @@
+$breakpoints: ( desktop: 1400px, tablet-landscape: 1100px, tablet-portrait: 1023px, mobile: 767px, );
+//Colors
+$primaryColor: #fbb03b;
+$secondaryColor: #14171c;
+$headerColor: $secondaryColor;
+$textColor: $secondaryColor;
+$linkColor: $primaryColor;
+$navColor: #323232;
+$lightColor: #ededed;
+$white: #fff;
+$black: #000;
+//Fonts
+$primaryFont: "Poppins",
+sans-serif;
+$secondaryFont: "Roboto",
+sans-serif;
+$fontSizes: ( 11: 11px, 12: 12px, 13: 13px, 14: 14px, 15: 15px, 16: 16px, 17: 17px, 18: 18px, );
+$fontWeights: ( 300: 300, 400: 400, 500: 500, );
+// Others
+$contentWidth: 75%;
+$spacing: 30px;

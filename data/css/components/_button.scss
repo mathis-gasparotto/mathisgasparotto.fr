@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  color: $secondaryColor;
+  background-color: $primaryColor;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: $primaryColor;
+  background-color: $secondaryColor;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}

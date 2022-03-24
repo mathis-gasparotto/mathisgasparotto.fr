@@ -1,0 +1,15 @@
+.screen-container.active .page-content {
+  display: none;
+}
+
+.screen-container .page-content {
+  display: initial;
+  animation: page-content-appear 1s ease;
+}
+
+.page-content {
+  background-color: $white;
+  .section {
+    padding: 4em 0;
+  }
+}
