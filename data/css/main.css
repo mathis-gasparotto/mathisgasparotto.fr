@@ -132,17 +132,7 @@
   }
 }
 
-@-webkit-keyframes page-content-appear {
-  0% {
-    display: none;
-  }
-  99% {
-    display: none;
-  }
-  100% {
-    display: initial;
-  }
-}
+/* -- Test for animation to return to the page from the nav menu --
 
 @keyframes page-content-appear {
   0% {
@@ -156,13 +146,31 @@
   }
 }
 
+@keyframes page-content-hide {
+  0% {
+    display: initial;
+  }
+  99% {
+    display: initial;
+  }
+  100% {
+    display: none;
+  }
+}*/
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   color: #14171c;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
+  body {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
   body {
     -webkit-transition: all 0.4s ease, font-size 0s;
     transition: all 0.4s ease, font-size 0s;
@@ -170,7 +178,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 1023px) {
   body {
     -webkit-transition: all 0.4s ease, font-size 0s;
     transition: all 0.4s ease, font-size 0s;
@@ -178,7 +186,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 767px) {
   body {
     -webkit-transition: all 0.4s ease, font-size 0s;
     transition: all 0.4s ease, font-size 0s;
@@ -216,6 +224,10 @@ h5 {
 
 h6 {
   font-size: 1em;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 *,
@@ -444,17 +456,33 @@ a {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #14171c;
-  background-color: #fbb03b;
   padding: 0.6rem 1.3rem;
   font-weight: 600;
+}
+
+.btn.btn-primary {
+  color: #14171c;
+  background-color: #fbb03b;
+}
+
+.btn.btn-primary:hover {
+  color: #fbb03b;
+  background-color: #14171c;
+}
+
+.btn.btn-secondary {
+  color: #fff;
+  background-color: #14171c;
+}
+
+.btn.btn-secondary:hover {
+  color: #14171c;
+  background-color: #fff;
 }
 
 .btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  color: #fbb03b;
-  background-color: #14171c;
 }
 
 .btn:active {
@@ -517,12 +545,6 @@ a {
 
 .section.projects {
   background-color: #ededed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .section.projects .projects-container {
@@ -531,7 +553,6 @@ a {
 }
 
 .section.projects .projects-container .project-container {
-  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,6 +588,35 @@ a {
 
 .section.projects .projects-container .project-container div.text-container .content {
   margin-bottom: 20px;
+}
+
+.section.projects .projects-show-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: inherit;
+  background-color: #fbb03b;
+}
+
+.section.projects .projects-show-more div {
+  width: 50%;
+}
+
+.section.projects .projects-show-more .left,
+.section.projects .projects-show-more .right {
+  text-align: center;
+  height: 100%;
+}
+
+.section.projects .projects-show-more .left {
+  margin: auto;
+}
+
+.section.projects .projects-show-more .right {
+  margin: 15px 0;
 }
 
 .screen-container .links {
@@ -690,8 +740,6 @@ a {
 
 .screen-container .page-content {
   display: initial;
-  -webkit-animation: page-content-appear 1s ease;
-          animation: page-content-appear 1s ease;
 }
 
 .page-content {
@@ -700,6 +748,50 @@ a {
 
 .page-content .section {
   padding: 4em 0;
+}
+
+.page-content .section > div {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .page-content .section > div {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
+  .page-content .section > div {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    max-width: 1080px;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1023px) {
+  .page-content .section > div {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 767px) {
+  .page-content .section > div {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-content .section > div {
+    -webkit-transition: all 0.4s ease, font-size 0s;
+    transition: all 0.4s ease, font-size 0s;
+    max-width: 300px;
+  }
 }
 
 .main-container .main .hero {
@@ -793,7 +885,6 @@ a {
   left: 0;
   width: 100%;
   z-index: 30;
-  height: 3rem;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -818,24 +909,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-}
-
-.screen-container .navbar .menu .logo {
-  /*font-size: 1.1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      line-height: 4rem;
-      span {
-        font-weight: 300;
-      }*/
-  /* img {
-          width: 100px;
-          transition: 0.3s;
-        }
-        .logo-noir {
-          display: none;
-        } */
 }
 
 .screen-container .navbar .menu .logo .logo-svg {
@@ -909,15 +982,6 @@ a {
   color: #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.screen-container.active .navbar .menu .logo {
-  /*.logo-blanc {
-          display: none;
-        }
-        .logo-noir {
-          display: initial;
-        }*/
 }
 
 .screen-container.active .navbar .menu .logo .logo-svg {

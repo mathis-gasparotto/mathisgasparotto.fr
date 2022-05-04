@@ -5,7 +5,6 @@
     left: 0;
     width: 100%;
     z-index: 30;
-    height: 3rem;
     color: $white;
     transition: 0.3s;
     .menu {
@@ -19,21 +18,6 @@
       align-items: center;
       margin-top: 10px;
       .logo {
-        /*font-size: 1.1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      line-height: 4rem;
-      span {
-        font-weight: 300;
-      }*/
-        /* img {
-          width: 100px;
-          transition: 0.3s;
-        }
-        .logo-noir {
-          display: none;
-        } */
         .logo-svg {
           fill: $white;
           width: 100px;
@@ -92,12 +76,6 @@
     transition: 0.3s;
     .menu {
       .logo {
-        /*.logo-blanc {
-          display: none;
-        }
-        .logo-noir {
-          display: initial;
-        }*/
         .logo-svg {
           fill: $secondaryColor;
           .b,

@@ -1,8 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   color: $textColor;
   @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
     font-size: 15px;
   }
   @include tablet-landscape {
@@ -38,4 +40,8 @@ h5 {
 
 h6 {
   font-size: 1em;
+}
+
+.bold {
+  font-weight: 600;
 }

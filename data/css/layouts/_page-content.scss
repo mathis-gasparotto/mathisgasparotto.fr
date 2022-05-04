@@ -4,12 +4,29 @@
 
 .screen-container .page-content {
   display: initial;
-  animation: page-content-appear 1s ease;
 }
 
 .page-content {
   background-color: $white;
   .section {
-    padding: 4em 0;
+    padding: $marginSpacing 0;
+    &>div {
+      margin: 0 auto;
+      @include desktop {
+        max-width: $maxWidthDesktop;
+      }
+      @include laptop {
+        max-width: $maxWidthLaptop;
+      }
+      @include tablet-landscape {
+        max-width: $maxWidthTabletLandscape;
+      }
+      @include tablet-portrait {
+        max-width: $maxWidthTabletPortrait;
+      }
+      @include mobile {
+        max-width: $maxWidthMobile;
+      }
+    }
   }
 }

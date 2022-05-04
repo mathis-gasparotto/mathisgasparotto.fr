@@ -1,20 +1,27 @@
 // Media Queries
 @mixin desktop {
-  @media screen and (max-width: map-get($breakpoints, desktop)) {
+  @media screen and (min-width: map-get($breakpoints, laptop)) {
+    transition: all 0.4s ease, font-size 0s;
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: map-get($breakpoints, laptop)) and (min-width: map-get($breakpoints, tablet-landscape)) {
     transition: all 0.4s ease, font-size 0s;
     @content;
   }
 }
 
 @mixin tablet-landscape {
-  @media screen and (max-width: map-get($breakpoints, tablet-landscape)) {
+  @media screen and (max-width: map-get($breakpoints, tablet-landscape)) and (min-width: map-get($breakpoints, tablet-portrait)) {
     transition: all 0.4s ease, font-size 0s;
     @content;
   }
 }
 
 @mixin tablet-portrait {
-  @media screen and (max-width: map-get($breakpoints, tablet-portrait)) {
+  @media screen and (max-width: map-get($breakpoints, tablet-portrait)) and (min-width: map-get($breakpoints, mobile)) {
     transition: all 0.4s ease, font-size 0s;
     @content;
   }

@@ -1,4 +1,4 @@
-$breakpoints: ( desktop: 1400px, tablet-landscape: 1100px, tablet-portrait: 1023px, mobile: 767px, );
+$breakpoints: ( laptop: 1400px, tablet-landscape: 1100px, tablet-portrait: 1023px, mobile: 767px, );
 //Colors
 $primaryColor: #fbb03b;
 $secondaryColor: #14171c;
@@ -18,4 +18,10 @@ $fontSizes: ( 11: 11px, 12: 12px, 13: 13px, 14: 14px, 15: 15px, 16: 16px, 17: 17
 $fontWeights: ( 300: 300, 400: 400, 500: 500, );
 // Others
 $contentWidth: 75%;
-$spacing: 30px;
+$marginSpacing: 4em;
+$paddingSpacing: 15px;
+$maxWidthDesktop: 1140px;
+$maxWidthLaptop: 1080px;
+$maxWidthTabletLandscape: 1000px;
+$maxWidthTabletPortrait: 750px;
+$maxWidthMobile: 300px;
