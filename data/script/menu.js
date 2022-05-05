@@ -34,6 +34,8 @@ $(document).ready(function() {
   });
   */
 
+  /* -- Disparition en scroll vers le bas, et apparition en scroll vers le haut --
+  
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -43,6 +45,6 @@ $(document).ready(function() {
       document.querySelector(".screen-container .navbar").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
-  }
+  }*/
 
 })
