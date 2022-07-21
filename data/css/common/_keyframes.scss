@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes appear {
+@keyframes appear-links {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -18,7 +18,7 @@
   }
 }
 
-@keyframes hide {
+@keyframes hide-links {
   from {
     opacity: 1;
     transform: translateY(0px);
@@ -28,6 +28,46 @@
     transform: translateY(20px);
   }
 }
+
+@keyframes back-page-one {
+  0% {
+    transform: translate(0);
+  }
+  5% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+  }
+}
+
+@keyframes back-page-two {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+  }
+}
+
+@keyframes back-page-three {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(40px) scale(0.5);
+  }
+}
+
+
+
+
 
 @keyframes shadow-one {
   0% {
@@ -53,14 +93,23 @@
   }
 }
 
+@keyframes shadow-three {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(40px) scale(0.5);
+  }
+}
+
 
 /* -- Test for animation to return to the page from the nav menu --
 
 @keyframes page-content-appear {
   0% {
-    display: none;
-  }
-  99% {
     display: none;
   }
   100% {
@@ -72,10 +121,9 @@
   0% {
     display: initial;
   }
-  99% {
-    display: initial;
-  }
   100% {
     display: none;
   }
-}*/
+}
+
+*/

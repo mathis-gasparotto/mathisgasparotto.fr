@@ -5,6 +5,15 @@
   margin: 0;
 }
 
+::selection {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
+p.text {
+  font-weight: 400;
+}
+
 @each $fontWeight,
 $weight in $fontWeights {
   .fw-#{$fontWeight} {
@@ -33,9 +42,15 @@ $size in $fontSizes {
   flex-direction: column;
 }
 
-a {
+.link {
+  font-weight: $linkWeight;
   color: $linkColor;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .txt-align-center {
@@ -68,10 +83,14 @@ a {
   }
 }
 
-.read-more-btn {
-  &::after {
-    content: ">";
-    margin-left: 5px;
-    font-family: $secondaryFont;
-  }
+.bg-secondary {
+  background-color: $secondaryColor;
+}
+
+.cl-white {
+  color: $white;
+}
+
+.cl-black {
+  color: $black;
 }

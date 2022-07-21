@@ -1,5 +1,5 @@
 .screen-container {
-  .links {
+  .nav-links {
     position: fixed;
     right: 20%;
     top: 0;
@@ -16,6 +16,9 @@
     @include breakpoint(600px) {
       right: 0%;
     }
+    @include breakpoint(550px) {
+      display: none;
+    }
     /*550px --> ranger menu*/
     ul {
       list-style-type: none;
@@ -25,7 +28,10 @@
       align-items: center;
       left: 0;
       li {
-        span {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: hide-links 0.5s forwards ease;
+        .nav-link {
           cursor: pointer;
           text-decoration: none;
           color: $navColor;
@@ -36,34 +42,47 @@
           font-weight: 400;
           text-transform: uppercase;
           letter-spacing: 1px;
-          transition: 0.1s;
-          opacity: 0;
-          transform: translateY(20px);
-          transform: scale(1);
-          animation: hide 0.5s forwards ease;
+          transition: 0.3s, color 0.1s;
+          // new style
+          padding: 0 10px;
+          position: relative;
           &:hover {
             color: $black;
+            transform: scale3d(1.1, 1.1, 1.1);
             &::before {
-              width: 100%;
-              opacity: 1;
+              /*width: 100%;
+              opacity: 1;*/
+              // new style 
+              transform-origin: 0% 50%;
+              transform: scale3d(1, 1, 1);
             }
           }
           &:active {
             color: $white;
-            transform: scale(0.9);
-            &::before {
+            /*&::before {
               background-color: $white;
-            }
+            }*/
           }
           &::before {
             content: "";
-            display: block;
+            // new style
+            top: calc(50% - (2px/2));
+            height: 2px;
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+            position: absolute;
+            width: 100%;
+            background: currentColor;
+            left: 0;
+            pointer-events: none;
+            /*display: block;
             margin: 0 auto;
             width: 0;
             height: 2px;
             transition: 0.5s;
             opacity: 0;
-            background-color: $black;
+            background-color: $black;*/
           }
         }
       }
@@ -72,12 +91,10 @@
 }
 
 .screen-container.active {
-  .links {
+  .nav-links {
     ul {
       li {
-        span {
-          animation: appear 0.5s forwards ease var(--i);
-        }
+        animation: appear-links 0.5s forwards ease var(--i);
       }
     }
   }

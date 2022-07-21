@@ -1,47 +1,56 @@
-// Media Queries
+// ------------------------- Media Queries -------------------------
 @mixin desktop {
   @media screen and (min-width: map-get($breakpoints, laptop)) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
 @mixin laptop {
   @media screen and (max-width: map-get($breakpoints, laptop)) and (min-width: map-get($breakpoints, tablet-landscape)) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
 @mixin tablet-landscape {
   @media screen and (max-width: map-get($breakpoints, tablet-landscape)) and (min-width: map-get($breakpoints, tablet-portrait)) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
 @mixin tablet-portrait {
   @media screen and (max-width: map-get($breakpoints, tablet-portrait)) and (min-width: map-get($breakpoints, mobile)) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
 @mixin mobile {
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
 @mixin breakpoint($px) {
   @media screen and (max-width: $px) {
-    transition: all 0.4s ease, font-size 0s;
+    @include responsive-transition;
     @content;
   }
 }
 
-// Others
+// ------------------------- Transitions -------------------------
+@mixin responsive-transition {
+  transition: all 0.4s ease, font-size 0s;
+}
+
+@mixin responsive-transition-btn {
+  transition: 0.3s, font-size 0s, padding 0s !important;
+}
+
+// ------------------------- Others -------------------------
 @mixin transition-btn {
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -64,4 +73,12 @@
 
 @mixin hero-bg($url, $size) {
   background: url($url) center / $size no-repeat;
+}
+
+@mixin white-shadow-btn {
+  box-shadow: 0px 0px 9px 2px rgba(156, 156, 156, 0.5);
+}
+
+@mixin lite-white-shadow-btn {
+  box-shadow: 0px 0px 9px 2px rgba(156, 156, 156, 0.25);
 }
