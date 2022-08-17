@@ -1,0 +1,45 @@
+.section.coordinates {
+  .container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mobile {
+      gap: 20px;
+      flex-direction: column;
+    }
+    .single-coordinate {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      background-color: #fff;
+      padding: 40px;
+      gap: 10px;
+      @include mobile {
+        width: 100%;
+      }
+      .icon {
+        color: $secondaryColor;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40px;
+        padding: 12px;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        width: calc(40px + 2 * 12px);
+        height: calc(40px + 2 * 12px);
+        text-align: center;
+      }
+      .title {
+        @include h6;
+        @include bold;
+      }
+      .text {
+        @include text;
+        @include light;
+      }
+    }
+  }
+}

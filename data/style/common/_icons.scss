@@ -1,0 +1,18 @@
+.fa::before, .fa::after {
+  font-family: $fa;
+}
+.fa.fa-dl::before {
+  content: "\f019";
+}
+.fa.fa-phone::before {
+  content: "\f095";
+}
+.fa.fa-envelope::before {
+  content: "\f0e0";
+}
+.fa.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+.fa.fa-github::before {
+  content: "\f09b";
+}

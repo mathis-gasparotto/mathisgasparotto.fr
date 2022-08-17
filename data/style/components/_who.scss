@@ -1,0 +1,39 @@
+.section.who {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+    .img-container, .content-container {
+      width: 100%;
+    }
+    .img-container {
+      text-align: center;
+      .img {
+        max-width: 100%;
+        width: 300px;
+        margin: auto;
+        border-radius: 50%;
+        @include mobile {
+          max-width: 60%;
+        }
+      }
+    }
+    .content-container {
+      .text {
+        margin: 2rem 0;
+        @include mobile {
+          // text-align: left;
+          margin-top: 1rem;
+        }
+      }
+      .btn:hover {
+        @include lite-white-shadow-btn;
+      }
+    }
+  }
+}

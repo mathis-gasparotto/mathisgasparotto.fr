@@ -1,0 +1,32 @@
+.page.cv-page {
+  .section.cv-dl-n-show {
+    .cv-container {
+      .cv-dl-btn {
+        margin: auto;
+        margin-bottom: $marginSpacing-2;
+      }
+      .cv-embed {
+        @include tablet-landscape {
+          height: 1112px;
+          display: none;
+        }
+        @include tablet-portrait {
+          height: 1112px;
+          display: none;
+        }
+        @include mobile {
+          height: 477px;
+          display: none;
+        }
+      }
+      .cv-img {
+        @include desktop {
+          display: none;
+        }
+        @include laptop {
+          display: none;
+        }
+      }
+    }
+  }
+}

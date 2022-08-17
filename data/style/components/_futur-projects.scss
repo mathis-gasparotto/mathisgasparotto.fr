@@ -1,0 +1,49 @@
+.section.futur-projects {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: $marginSpacing;
+    @include mobile {
+      text-align: center;
+    }
+    .projects-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: $marginSpacing;
+      @include tablet-portrait {
+        gap: $marginSpacing-2;
+      }
+      @include mobile {
+        gap: 40px;
+        flex-direction: column;
+      }
+      .project-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $marginSpacing-3;
+        @include mobile {
+          gap: 10px;
+        }
+        .project-img-container {
+          width: 100%;
+          .project-img {
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: -7px;
+            @include tablet-portrait {
+              height: 19rem;
+            }
+            @include mobile {
+              height: $maxWidthMobile;
+            }
+          }
+        }
+      }
+    }
+  }
+}

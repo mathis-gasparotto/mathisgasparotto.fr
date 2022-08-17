@@ -5,20 +5,18 @@
   $first_word_h1 = "Me";
   $second_word_h1 = "Contacter";
 
-  require 'layout/hero.php';
+  require 'layouts/hero.php';
   ?>
 
   <div class="page-content">
 
   <?php 
-  require 'components/skills.php';
-  require 'components/projects.php';
-  require 'components/who.php';
-  require 'components/futur_projects.php';
-  require 'components/cta.php';
-  require 'layout/footer.php';
+  require 'components/coordinates.php';
+  require 'components/contact_form.php';
   ?>
 
   </div>
+
+  <?php require 'layouts/footer.php'; ?>
 
 </div>

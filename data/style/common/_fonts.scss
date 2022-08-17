@@ -1,0 +1,79 @@
+body {
+  font-family: $primaryFont;
+  color: $textColor;
+  @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
+    font-size: 16px;
+  }
+  @include tablet-landscape {
+    font-size: 15px;
+  }
+  @include tablet-portrait {
+    font-size: 15px;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-size: $fsH1;
+}
+
+h2 {
+  font-size: $fsH2;
+}
+
+h3 {
+  font-size: $fsH3;
+}
+
+h4 {
+  font-size: $fsH4;
+}
+
+h5 {
+  font-size: $fsH5;
+}
+
+h6 {
+  font-size: $fsH6;
+}
+
+.bold {
+  font-weight: $fwBold;
+}
+
+.light {
+  font-weight: $fwLight;
+}
+
+.h1-style {
+  font-size: $fsH1;
+}
+
+.h2-style {
+  font-size: $fsH2;
+}
+
+.h3-style {
+  font-size: $fsH3;
+}
+
+.h4-style {
+  font-size: $fsH4;
+}
+
+.h5-style {
+  font-size: $fsH5;
+}
+
+.h6-style {
+  font-size: $fsH6;
+}
+
+.text-style {
+  font-size: $fsText;
+}

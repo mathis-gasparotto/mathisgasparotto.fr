@@ -1,0 +1,43 @@
+.section.skills {
+  .container {
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   @include mobile {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+   }
+   .skills-section {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 30%;
+     gap: 10px;
+     @include mobile {
+      width: $contentWidth;
+     }
+     .img {
+       width: calc(40px + 2 * 12px);
+       height: calc(40px + 2 * 12px);
+       background-color: $primaryColor;
+       padding: 12px 0;
+       border-radius: 50%;
+       &.icon-dev {
+         padding: 10px;
+       }
+     }
+     .title {
+       @include h6;
+       @include bold;
+     }
+     .text {
+       @include text;
+       @include light;
+     }
+   }
+ }
+}

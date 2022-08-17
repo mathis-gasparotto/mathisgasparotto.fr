@@ -1,0 +1,91 @@
+.section.projects {
+  background-color: $lightColor;
+  .container:not(.projects-show-more) {
+    @include mobile {
+      gap: 70px;
+      padding-bottom: 50px;
+    }
+  }
+  .container {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    .project-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        flex-direction: column !important;
+        gap: 20px;
+      }
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+      .img-container {
+        width: 50%;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+        @include mobile {
+          width: 100%;
+        }
+        .img {
+          width: 100%;
+          margin-bottom: -7px;
+          object-fit: cover;
+          @include desktop {
+            height: 430px;
+          }
+          @include laptop {
+            height: 400px;
+          }
+          @include tablet-landscape {
+            height: 380px;
+          }
+          @include tablet-portrait {
+            height: 360px;
+          }
+          @include mobile {
+            height: 220px;
+          }
+        }
+      }
+      .text-container {
+        max-width: 40%;
+        margin: auto;
+        min-height: 100%;
+        padding: 2em 0;
+        @include mobile {
+          max-width: 90%;
+          text-align: center;
+        }
+        .content {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .projects-show-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: inherit;
+    background-color: $primaryColor;
+    padding: $paddingSpacing 0;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .left,
+    .right {
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      margin: auto;
+      @include mobile {
+        width: 90%;
+      }
+    }
+  }
+}

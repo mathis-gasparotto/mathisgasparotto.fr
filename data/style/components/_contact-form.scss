@@ -1,0 +1,23 @@
+.section.contact-form {
+  color: $white;
+  .container {
+    display: flex;
+    flex-direction: row;
+    @include mobile {
+      flex-direction: column;
+    }
+    align-items: center;
+    gap: 60px;
+    &>div {
+      width: 100%;
+    }
+    .title-container {
+      .title {
+        @include h2;
+        @include mobile {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

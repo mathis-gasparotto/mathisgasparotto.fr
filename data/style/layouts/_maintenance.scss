@@ -1,0 +1,12 @@
+.section.maintenance {
+  background-color: $secondaryColor;
+  color: $white;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+}
