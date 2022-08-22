@@ -5,21 +5,21 @@
   $first_word_h1 = "Développeur";
   $second_word_h1 = "Web";
 
-  require 'layouts/main_hero.php';
+  require ( ROOT . 'layouts/main_hero.php' );
   ?>
 
   <div class="page-content">
 
   <?php 
-  require 'components/skills.php';
-  require 'components/projects.php';
-  require 'components/who.php';
-  require 'components/futur_projects.php';
-  require 'components/cta.php';
+  require ( ROOT . 'components/skills.php' );
+  require ( ROOT . 'components/projects.php' );
+  require ( ROOT . 'components/who.php' );
+  require ( ROOT . 'components/futur_projects.php' );
+  require ( ROOT . 'components/cta.php' );
   ?>
 
   </div>
 
-<?php require 'layouts/footer.php'; ?>
+<?php require ( ROOT . 'layouts/footer.php' ); ?>
 
 </div>
