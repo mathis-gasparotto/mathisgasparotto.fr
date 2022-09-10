@@ -20,7 +20,7 @@
         flex-direction: column !important;
         gap: 20px;
       }
-      &.reverse {
+      &:nth-of-type(2n) {
         flex-direction: row-reverse;
       }
       .img-container {

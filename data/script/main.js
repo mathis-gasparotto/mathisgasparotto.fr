@@ -18,6 +18,20 @@ $(document).ready(function() {
     }, 1000);
   };
   
+  let navbar = document.getElementById("navbar");
+  window.onscroll = function() {
+    var windowsY = window.pageYOffset;
+    var contentY = document.getElementById("page-content").getBoundingClientRect().top + window.scrollY;
+    var navbar_height = navbar.getBoundingClientRect().height;
+    var navbar_scroll = navbar_height + windowsY;
+    navbar.style.top = windowsY + "px";
+    if (navbar_scroll >= contentY) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+
   const hamburger_menu = document.querySelector(".hamburger-menu");
   /* -- Test for animation to return to the page from the nav menu --
   const hamburger_menu_active = document.querySelector(".screen-container.active .hamburger-menu");

@@ -1,4 +1,4 @@
-<div class="page cv-page" id="top">
+<div class="page cv-page">
 
   <?php
 
@@ -8,7 +8,7 @@
   require ( ROOT . 'layouts/hero.php' );
   ?>
 
-  <div class="page-content">
+  <div class="page-content" id="page-content">
     <section class="section cv-dl-n-show">
       <div class="center column cv-container container">
         <?php require ( ROOT . 'components/cv_dl_btn.php' ); ?>

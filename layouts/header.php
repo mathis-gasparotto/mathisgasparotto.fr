@@ -1,9 +1,9 @@
 <body id="index">
   <div class="screen-container">
     <div class="content">
-      <header class="navbar">
+      <header class="navbar" id="navbar">
         <div class="menu">
-          <h2 class="logo">
+          <div class="logo">
             <span class="home_link changing-page-link">
               <svg class="logo-svg" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 650.26">
                 <defs>
@@ -40,7 +40,7 @@
               <img class="logo-noir" src="data/img/rogne_noir_noir.png" alt="logo mathis gasparotto"> -->
               <!--Mathis<span>Gasparotto</span>-->
             </span>
-          </h2>
+          </div>
           <div class="hamburger-menu">
             <div class="bar"></div>
           </div>

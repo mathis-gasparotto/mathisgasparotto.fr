@@ -1,4 +1,4 @@
-<div class="page home-page" id="top">
+<div class="page home-page">
 
   <?php
 
@@ -8,7 +8,7 @@
   require ( ROOT . 'layouts/main_hero.php' );
   ?>
 
-  <div class="page-content">
+  <div class="page-content" id="page-content">
 
   <?php 
   require ( ROOT . 'components/skills.php' );

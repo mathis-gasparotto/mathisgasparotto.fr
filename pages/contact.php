@@ -1,4 +1,4 @@
-<div class="page contact-page" id="top">
+<div class="page contact-page">
 
   <?php
 
@@ -8,7 +8,7 @@
   require ( ROOT . 'layouts/hero.php' );
   ?>
 
-  <div class="page-content">
+  <div class="page-content" id="page-content">
 
   <?php 
   require ( ROOT . 'components/coordinates.php' );

@@ -9,6 +9,9 @@
   .input-container {
     input:not([type="checkbox"]) {
       height: 50px;
+      &.is-invalid {
+        background-position: right calc(0.375em + 0.1875rem) center !important;
+      }
     }
     input:not([type="checkbox"]), textarea {
       width: 100%;
@@ -18,9 +21,26 @@
       border-color: none;
       font-size: $fsText2;
       font-weight: $fwLight;
+      &.is-invalid {
+        border: 1px solid #dc3545;
+        padding-right: calc(1.5em + 20px);
+        background-image: url(/data/img/input-invalid.svg);
+        background-repeat: no-repeat;
+        background-position: right calc(0.375em + 0.1875rem) top calc(0.375em + 0.1875rem);
+        background-size: 30px 30px;
+      }
     }
     label.required::after {
       content: ' *';
     }
+  }
+  .invalid-feedback {
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .9em;
+    color: #dc3545;
+    font-weight: 300;
   }
 }
