@@ -1,24 +1,24 @@
 <nav class="nav-links">
   <ul>
     <li style="--i: 0.1s">
-      <span class="nav-link home_link">
+      <a href="<?php echo $home_url; ?>" class="nav-link home_link">
         Accueil
-      </span>
+      </a>
     </li>
     <li style="--i: 0.15s">
-      <span class="nav-link cv_link">
+      <a href="<?php echo $cv_url; ?>" class="nav-link cv_link">
         CV
-      </span>
+      </a>
     </li>
     <li style="--i: 0.2s">
-      <span class="nav-link portfolio_link">
+      <a href="<?php echo $portfolio_url; ?>" class="nav-link portfolio_link">
         Portfolio
-      </span>
+      </a>
     </li>
     <li style="--i: 0.25s">
-      <span class="nav-link contact_link">
+      <a href="<?php echo $contact_url; ?>" class="nav-link contact_link">
         Contact
-      </span>
+      </a>
     </li>
   </ul>
 </nav>

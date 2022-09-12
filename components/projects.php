@@ -63,8 +63,7 @@ $projects = [
   <div class="projects-show-more container">
     <div class="left bold">Et bien d’autres jeux vidéos en tout genre…</div>
     <div class="right">
-      <!-- <a href="/portfolio" class="btn btn-secondary">En découvrir plus</a> -->
-      <span class="btn btn-secondary changing-page-link portfolio_link">En découvrir plus</span>
+      <a href="<?php echo $portfolio_url; ?>" class="btn btn-secondary changing-page-link portfolio_link">En découvrir plus</a>
     </div>
   </div>
 </section>
