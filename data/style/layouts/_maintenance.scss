@@ -1,6 +1,7 @@
 .section.maintenance {
   background-color: $secondaryColor;
   color: $white;
+  height: calc(100vh - 10px - 1em) !important;
   .content {
     display: flex;
     flex-direction: column;

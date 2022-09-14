@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+  let navbar = document.getElementById("navbar");
+  window.onscroll = function() {
+    var windowsY = window.pageYOffset;
+    var contentY = document.getElementById("page-content").getBoundingClientRect().top + window.scrollY;
+    var navbar_height = navbar.getBoundingClientRect().height;
+    var navbar_scroll = navbar_height + windowsY;
+    navbar.style.top = windowsY + "px";
+    if (navbar_scroll >= contentY) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+  
   $(".scroll-animation").click(function(event) {
     event.preventDefault();
     $("html, body").animate({
@@ -16,22 +30,10 @@ $(document).ready(function() {
     $("html, body").animate({
       scrollTop: $("body").offset().top
     }, 1000);
+    navbar.classList.remove('scrolled');
   };
-  
-  let navbar = document.getElementById("navbar");
-  window.onscroll = function() {
-    var windowsY = window.pageYOffset;
-    var contentY = document.getElementById("page-content").getBoundingClientRect().top + window.scrollY;
-    var navbar_height = navbar.getBoundingClientRect().height;
-    var navbar_scroll = navbar_height + windowsY;
-    navbar.style.top = windowsY + "px";
-    if (navbar_scroll >= contentY) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  }
 
+  
   const hamburger_menu = document.querySelector(".hamburger-menu");
   /* -- Test for animation to return to the page from the nav menu --
   const hamburger_menu_active = document.querySelector(".screen-container.active .hamburger-menu");
@@ -52,12 +54,13 @@ $(document).ready(function() {
   
   const portfolio_page = document.querySelector(".screen-container .main-container .portfolio-page");
   const portfolio_page_btns = document.querySelectorAll(".portfolio_link");
-
+  
   const contact_page = document.querySelector(".screen-container .main-container .contact-page");
   const contact_page_btns = document.querySelectorAll(".contact_link");
   
   
   function swapPageToMainPage(elem) {
+    event.preventDefault();
     let main = document.querySelector(".screen-container .main  .page");
     elem.after(main);
     click_to_select.after(elem);

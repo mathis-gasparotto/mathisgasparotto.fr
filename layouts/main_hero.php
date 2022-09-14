@@ -6,8 +6,7 @@
         <h2 class="subtitle">Mathis <span>GASPAROTTO</span></h2>
         <div class="btns">
           <a href="#who" class="btn btn-secondary left scroll-animation">qui suis-je ?</a>
-          <!-- <a href="/portfolio" class="btn btn-primary right link">mon portfolio</a> -->
-          <span class="btn btn-primary right changing-page-link portfolio_link">mon portfolio</span>
+          <a href="<?php echo $portfolio_url; ?>" class="btn btn-primary right changing-page-link portfolio_link">mon portfolio</a>
         </div>
       </div>
     </div>

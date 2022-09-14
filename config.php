@@ -1,7 +1,7 @@
 <?php
 define('ROOT', __DIR__ . DIRECTORY_SEPARATOR);
-
-$home_url = "javascript:void(0);"; // /
-$cv_url = "javascript:void(0);"; // /cv
-$portfolio_url = "javascript:void(0);"; // /portfolio
-$contact_url = "javascript:void(0);"; // /contact
+// javascript:void(0);
+$home_url = "/"; // /
+$cv_url = "/cv"; // /cv
+$portfolio_url = "/portfolio"; // /portfolio
+$contact_url = "/contact"; // /contact
