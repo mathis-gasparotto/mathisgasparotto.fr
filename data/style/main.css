@@ -350,27 +350,6 @@
     transform: perspective(1300px) rotateY(20deg) translateZ(40px) scale(0.5);
   }
 }
-/* -- Test for animation to return to the page from the nav menu --
-
-@keyframes page-content-appear {
-  0% {
-    display: none;
-  }
-  100% {
-    display: initial;
-  }
-}
-
-@keyframes page-content-hide {
-  0% {
-    display: initial;
-  }
-  100% {
-    display: none;
-  }
-}
-
-*/
 @font-face {
   font-family: "Poppins";
   src: url("/data/fonts/Poppins-Thin.ttf");
@@ -1595,14 +1574,6 @@ a {
           animation: appear-links 0.5s forwards ease var(--i);
 }
 
-/*.screen-container.active .page-content {
-  display: none;
-}*/
-/*.screen-container .page-content {
-  animation-name: page-content-appear;
-  animation-duration: 0.1s;
-  animation-delay: 7s;
-}*/
 .page-content {
   background-color: #fff;
 }
@@ -1613,7 +1584,7 @@ a {
   width: 100%;
   height: 100vh;
 }
-.page-content .section.full.full-center {
+.page-content .section.full--center {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,7 +4,7 @@
       <header class="navbar" id="navbar">
         <div class="menu">
           <div class="logo">
-            <a href="<?php echo $home_url; ?>" class="home_link changing-page-link">
+            <a href="<?php echo $home_url; ?>" class="home_link nav-link scroll-to-top changing-page-link">
               <svg class="logo-svg" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 650.26">
                 <defs>
                   <style>

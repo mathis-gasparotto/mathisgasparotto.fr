@@ -45,7 +45,7 @@ $projects = [
   <div class="projects-show-more container">
     <div class="left bold">Et bien d’autres jeux vidéos en tout genre…</div>
     <div class="right">
-      <a href="<?php echo $portfolio_url; ?>" class="btn btn-secondary changing-page-link portfolio_link">En découvrir plus</a>
+      <a href="<?php echo $portfolio_url; ?>" class="btn btn-secondary changing-page-link portfolio_link scroll-to-top">En découvrir plus</a>
     </div>
   </div>
 </section>

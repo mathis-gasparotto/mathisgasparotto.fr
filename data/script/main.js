@@ -27,6 +27,7 @@ $(document).ready(function() {
   });
 
   function scrollToTop() {
+    console.log('toto');
     $("html, body").animate({
       scrollTop: $("body").offset().top
     }, 1000);
@@ -35,13 +36,17 @@ $(document).ready(function() {
 
   
   const hamburger_menu = document.querySelector(".hamburger-menu");
-  /* -- Test for animation to return to the page from the nav menu --
-  const hamburger_menu_active = document.querySelector(".screen-container.active .hamburger-menu");
-  */
+
+  // -- Test for animation to return to the page from the nav menu --
+  // const hamburger_menu_active = document.querySelector(".screen-container.active .hamburger-menu");
+  // ----------------
+
   const container = document.querySelector(".screen-container");
-  /* -- Test for animation to return to the page from the nav menu --
-  const page_content = document.querySelector(".page-content");
-  */
+
+  // -- Test for animation to return to the page from the nav menu --
+  // const page_content = document.querySelector(".page-content");
+  // ----------------
+  
  
  
   const click_to_select = document.querySelector(".screen-container .main .click-to-select");
@@ -74,7 +79,7 @@ $(document).ready(function() {
   home_page_btns.forEach(home_page_btn => {
     home_page_btn.addEventListener("click", () => {
       swapPageToMainPage(home_page);
-      scrollToTop();
+      // scrollToTop();
       changePageTitle("Développeur Web - Mathis GASPAROTTO");
     });
   });
@@ -82,7 +87,7 @@ $(document).ready(function() {
   cv_page_btns.forEach(cv_page_btn => {
     cv_page_btn.addEventListener("click", () => {
       swapPageToMainPage(cv_page);
-      scrollToTop();
+      // scrollToTop();
       changePageTitle("CV | Développeur Web - Mathis GASPAROTTO");
     });
   });
@@ -90,7 +95,7 @@ $(document).ready(function() {
   portfolio_page_btns.forEach(portfolio_page_btn => {
     portfolio_page_btn.addEventListener("click", () => {
       swapPageToMainPage(portfolio_page);
-      scrollToTop();
+      // scrollToTop();
       changePageTitle("Portfolio | Développeur Web - Mathis GASPAROTTO");
     });
   });
@@ -98,7 +103,7 @@ $(document).ready(function() {
   contact_page_btns.forEach(contact_page_btn => {
     contact_page_btn.addEventListener("click", () => {
       swapPageToMainPage(contact_page);
-      scrollToTop();
+      // scrollToTop();
       changePageTitle("Contact | Développeur Web - Mathis GASPAROTTO");
     });
   });
@@ -108,17 +113,19 @@ $(document).ready(function() {
     
     const nav_links = document.querySelectorAll(".nav-link");
 
-    /* -- Test for animation to return to the page from the nav menu --
-    page_content.classList.add('active');
-    */
-
-    /*main_active.addEventListener("click", () => {
-      container.classList.remove("active");
-    });*/
+    // -- Test for animation to return to the page from the nav menu --
+    // page_content.classList.add('active');
     
-    /*home_btn.addEventListener("click", () => {
-      container.classList.remove("active");
-    });*/
+
+    // main_active.addEventListener("click", () => {
+    //   container.classList.remove("active");
+    // });
+    
+    // home_btn.addEventListener("click", () => {
+    //   container.classList.remove("active");
+    // });
+
+    // ----------------
        
     
     click_to_select.addEventListener("click", () => {
@@ -133,12 +140,12 @@ $(document).ready(function() {
     
   });
   
-  /*-- Test for animation to return to the page from the nav menu --
-  hamburger_menu_active.addEventListener("click", () => {
-    //wait
-    page_content.classList.remove('active');
-  });
-  */
+  // -- Test for animation to return to the page from the nav menu --
+  // hamburger_menu_active.addEventListener("click", () => {
+  //   //wait
+  //   page_content.classList.remove('active');
+  // });
+  // ----------------
 
   /* -- Disparition du header en scroll vers le bas, et apparition en scroll vers le haut --
   
