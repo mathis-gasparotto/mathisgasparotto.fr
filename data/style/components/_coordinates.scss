@@ -22,15 +22,12 @@
       }
       .icon {
         color: $secondaryColor;
-        text-align: center;
-        vertical-align: middle;
         font-size: 40px;
-        padding: 12px;
         background-color: $primaryColor;
         border-radius: 50%;
         width: calc(40px + 2 * 12px);
         height: calc(40px + 2 * 12px);
-        text-align: center;
+        padding: 12px;
       }
       .title {
         @include h6;

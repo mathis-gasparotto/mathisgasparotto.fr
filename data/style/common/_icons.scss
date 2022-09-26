@@ -1,5 +1,12 @@
-.fa::before, .fa::after {
+.fa {
   font-family: $fa;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  font-variant: normal;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 .fa.fa-dl::before {
   content: "\f019";

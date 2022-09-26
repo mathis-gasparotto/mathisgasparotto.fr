@@ -12,6 +12,11 @@ $(document).ready(function() {
     } else {
       navbar.classList.remove('scrolled');
     }
+    if (windowsY >= 50) {
+      navbar.classList.add('mobile-scrolled');
+    } else {
+      navbar.classList.remove('mobile-scrolled');
+    }
   }
   
   $(".scroll-animation").click(function(event) {
@@ -27,7 +32,6 @@ $(document).ready(function() {
   });
 
   function scrollToTop() {
-    console.log('toto');
     $("html, body").animate({
       scrollTop: $("body").offset().top
     }, 1000);

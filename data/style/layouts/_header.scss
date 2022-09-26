@@ -12,6 +12,33 @@
       &.scrolled {
         background-color: $secondaryColor;
         // transition: background .1s;
+        .menu {
+          .logo {
+            .logo-svg {
+              .inner, .line {
+                fill: $primaryColor;
+                stroke: $primaryColor;
+              }
+            }
+          }
+        }
+      }
+      &.mobile-scrolled {
+        @include mobile {
+          transition: 0s !important;
+          background-color: $secondaryColor;
+          // transition: background .1s;
+          .menu {
+            .logo {
+              .logo-svg {
+                .inner, .line {
+                  fill: $primaryColor;
+                  stroke: $primaryColor;
+                }
+              }
+            }
+          }
+        }
       }
       .menu {
         max-width: 72rem;
@@ -29,15 +56,14 @@
           .logo-svg {
             fill: $white;
             width: 100px;
-            .b,
-            .c {
-              transition: 0.3s;
-              stroke: $white;
+            transition: 0.3s;
+            stroke: $white;
+            .line {
+              stroke-width: 20px;
             }
           }
         }
         .hamburger-menu {
-          display: inline-block;
           height: 3.5rem;
           width: 3.5rem;
           cursor: pointer;
@@ -83,16 +109,11 @@
   .content {
     .navbar {
       color: $black;
-      transition: 0.3s;
       .menu {
         .logo {
           .logo-svg {
             fill: $secondaryColor;
-            .b,
-            .c {
-              transition: 0.3s;
-              stroke: $secondaryColor;
-            }
+            stroke: $secondaryColor;
           }
         }
         .hamburger-menu {

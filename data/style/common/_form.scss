@@ -13,16 +13,20 @@
         background-position: right calc(0.375em + 0.1875rem) center !important;
       }
     }
+    textarea {
+      resize: vertical;
+    }
     input:not([type="checkbox"]), textarea {
+      border-radius: 3px;
+      border: none;
       width: 100%;
       padding: 20px;
       font-family: $primaryFont;
       color: $textColor;
-      border-color: none;
       font-size: $fsText2;
       font-weight: $fwLight;
       &.is-invalid {
-        border: 1px solid #dc3545;
+        border: 3px solid #dc3545;
         padding-right: calc(1.5em + 20px);
         background-image: url(/data/img/input-invalid.svg);
         background-repeat: no-repeat;
