@@ -1,20 +1,20 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
 // use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
-require ( ROOT . 'modules/PHPMailer/src/Exception.php' );
 require ( ROOT . 'modules/PHPMailer/src/PHPMailer.php' );
-require ( ROOT . 'modules/PHPMailer/src/SMTP.php' );
+// require ( ROOT . 'modules/PHPMailer/src/Exception.php' );
+// require ( ROOT . 'modules/PHPMailer/src/SMTP.php' );
 
 $phpmailer = new PHPMailer();
 $phpmailer->setLanguage('fr');
-$phpmailer->isSMTP();
-$phpmailer->Host = 'smtp.mailtrap.io';
-$phpmailer->SMTPAuth = true;
-$phpmailer->Port = 2525;
-$phpmailer->Username = '47dc1a0de906cc';
-$phpmailer->Password = 'dafb407818f5ff';
+// $phpmailer->isSMTP();
+// $phpmailer->Host = 'smtp.mailtrap.io';
+// $phpmailer->SMTPAuth = true;
+// $phpmailer->Port = 2525;
+// $phpmailer->Username = '47dc1a0de906cc';
+// $phpmailer->Password = 'dafb407818f5ff';
 $phpmailer->CharSet = 'UTF-8';
 
 $errors = [];
