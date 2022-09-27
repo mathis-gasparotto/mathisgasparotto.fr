@@ -1,7 +1,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+  .send-infos {
+    margin: 0;
+  }
   input[type="submit"], button[type="submit"] {
     font-family: $primaryFont;
     font-size: $fsText;
