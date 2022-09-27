@@ -79,36 +79,48 @@ $(document).ready(function() {
     document.title = title;
   }
 
+  function swapToHomePage() {
+    swapPageToMainPage(home_page);
+    // scrollToTop();
+    changePageTitle("Développeur Web - Mathis GASPAROTTO");
+  }
+  function swapToCvPage() {
+    swapPageToMainPage(cv_page);
+    // scrollToTop();
+    changePageTitle("CV | Développeur Web - Mathis GASPAROTTO");
+  }
+  function swapToPortfolioPage() {
+    swapPageToMainPage(portfolio_page);
+    // scrollToTop();
+    changePageTitle("Portfolio | Développeur Web - Mathis GASPAROTTO");
+  }
+  function swapToContactPage() {
+    swapPageToMainPage(contact_page);
+    // scrollToTop();
+    changePageTitle("Contact | Développeur Web - Mathis GASPAROTTO");
+  }
   
   home_page_btns.forEach(home_page_btn => {
     home_page_btn.addEventListener("click", () => {
-      swapPageToMainPage(home_page);
-      // scrollToTop();
-      changePageTitle("Développeur Web - Mathis GASPAROTTO");
+      swapToHomePage();
     });
   });
 
   cv_page_btns.forEach(cv_page_btn => {
     cv_page_btn.addEventListener("click", () => {
-      swapPageToMainPage(cv_page);
-      // scrollToTop();
-      changePageTitle("CV | Développeur Web - Mathis GASPAROTTO");
+      swapToCvPage();
     });
   });
 
   portfolio_page_btns.forEach(portfolio_page_btn => {
     portfolio_page_btn.addEventListener("click", () => {
-      swapPageToMainPage(portfolio_page);
-      // scrollToTop();
-      changePageTitle("Portfolio | Développeur Web - Mathis GASPAROTTO");
+      swapToPortfolioPage();
     });
   });
   
   contact_page_btns.forEach(contact_page_btn => {
     contact_page_btn.addEventListener("click", () => {
-      swapPageToMainPage(contact_page);
-      // scrollToTop();
-      changePageTitle("Contact | Développeur Web - Mathis GASPAROTTO");
+      swapToContactPage();
     });
   });
  

@@ -1,5 +1,4 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -39,24 +38,24 @@ if (!empty($_POST)) {
     $errors['message'] = 'Un message est requis';
   }
   if (empty($errors)) {
-
+    
     $phpmailer->From       = trim($_POST["email"]);
     $phpmailer->FromName   = trim($_POST["fname"]) . " " . trim($_POST["lname"]);
     
     $phpmailer->AddAddress('mathis.gasparotto@hotmail.com', 'Mathis Gasparotto');
-
+    
     $phpmailer->Subject    =  "Nouveau message de " . trim($_POST["fname"]) . " " . trim($_POST["lname"]) . " (from mathisgasparotto.fr)";
     $phpmailer->WordWrap   = 50;
     $phpmailer->IsHTML(true);
     $phpmailer->MsgHTML('
-      <div><b>Nom : </b>'.$_POST["lname"].'</div>
-      <div><b>Prénom : </b>'.$_POST["fname"].'</div>
-      <div><b>Email : </b><a href="mailto:'.$_POST["email"].'">'.$_POST["email"].'</a></div>
-      <div><b>Message :</b></div>
-      <div><p style="margin:0;">'.$_POST["message"].'</p></div>
+    <div><b>Nom : </b>'.$_POST["lname"].'</div>
+    <div><b>Prénom : </b>'.$_POST["fname"].'</div>
+    <div><b>Email : </b><a href="mailto:'.$_POST["email"].'">'.$_POST["email"].'</a></div>
+    <div><b>Message :</b></div>
+    <div><p style="margin:0;">'.$_POST["message"].'</p></div>
     ');
     $phpmailer->AltBody = $_POST["message"];
-
+    
     if (!$phpmailer->send()) {
       $sendError = $phpmailer->ErrorInfo;
     } else{
@@ -71,7 +70,7 @@ if (!empty($_POST)) {
       <h2 class="title">Envoyez-moi un message</h2>
     </div>
     <div class="form-container">
-      <form method="POST" class="form">
+      <form method="POST" class="form" action="/contact/">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
           <div class="alert alert-success send-info"><?php echo $sendSuccess; ?></div>
         <?php } ?>
