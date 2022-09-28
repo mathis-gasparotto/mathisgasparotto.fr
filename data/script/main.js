@@ -81,23 +81,23 @@ $(document).ready(function() {
 
   function swapToHomePage() {
     swapPageToMainPage(home_page);
-    // scrollToTop();
     changePageTitle("Développeur Web - Mathis GASPAROTTO");
+    window.history.pushState({'page_id': 1}, "", "/");
   }
   function swapToCvPage() {
     swapPageToMainPage(cv_page);
-    // scrollToTop();
     changePageTitle("CV | Développeur Web - Mathis GASPAROTTO");
+    window.history.pushState({'page_id': 2}, "", "/cv/");
   }
   function swapToPortfolioPage() {
     swapPageToMainPage(portfolio_page);
-    // scrollToTop();
     changePageTitle("Portfolio | Développeur Web - Mathis GASPAROTTO");
+    window.history.pushState({'page_id': 3}, "", "/portfolio/");
   }
   function swapToContactPage() {
     swapPageToMainPage(contact_page);
-    // scrollToTop();
     changePageTitle("Contact | Développeur Web - Mathis GASPAROTTO");
+    window.history.pushState({'page_id': 4}, "", "/contact/");
   }
   
   home_page_btns.forEach(home_page_btn => {
