@@ -2,17 +2,17 @@ $(document).ready(function() {
 
   let navbar = document.getElementById("navbar");
   window.onscroll = function() {
-    var windowsY = window.pageYOffset;
-    var contentY = document.getElementById("page-content").getBoundingClientRect().top + window.scrollY;
+    var windowY = window.pageYOffset;
+    var contentY = document.getElementById("page-content").getBoundingClientRect().top + windowY;
     var navbar_height = navbar.getBoundingClientRect().height;
-    var navbar_scroll = navbar_height + windowsY;
-    navbar.style.top = windowsY + "px";
+    var navbar_scroll = navbar_height + windowY;
+    navbar.style.top = windowY + "px";
     if (navbar_scroll >= contentY) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
-    if (windowsY >= 50) {
+    if (windowY >= 50) {
       navbar.classList.add('mobile-scrolled');
     } else {
       navbar.classList.remove('mobile-scrolled');
@@ -175,8 +175,5 @@ $(document).ready(function() {
     }
     prevScrollpos = currentScrollPos;
   }*/
-
-
-
 
 })
