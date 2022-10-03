@@ -123,3 +123,14 @@ a {
 .changing-page-link {
   cursor: pointer;
 }
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: #ddd;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 50px;
+  }
+}

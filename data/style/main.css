@@ -651,6 +651,15 @@ a {
   cursor: pointer;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ddd;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 50px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
