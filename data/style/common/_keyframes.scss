@@ -39,7 +39,7 @@
     @include main-transform(310px);
   }
   100% {
-    @include main-transform(215px);
+    @include main-transform(225px);
   }
 }
 
@@ -51,7 +51,7 @@
     @include main-transform(310px);
   }
   100% {
-    @include main-transform(120px);
+    @include main-transform(140px);
   }
 }
 
@@ -63,7 +63,7 @@
     @include main-transform(310px);
   }
   100% {
-    @include main-transform(40px);
+    @include main-transform(60px);
   }
 }
 
@@ -162,45 +162,3 @@
     @include main-transform(40px);
   }
 }
-
-
-
-
-
-
-@keyframes shadow-one {
-  0% {
-    transform: translate(0);
-  }
-  5% {
-    @include main-transform(310px);
-  }
-  100% {
-    @include main-transform(215px);
-  }
-}
-
-@keyframes shadow-two {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    @include main-transform(310px);
-  }
-  100% {
-    @include main-transform(120px);
-  }
-}
-
-@keyframes shadow-three {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    @include main-transform(310px);
-  }
-  100% {
-    @include main-transform(40px);
-  }
-}
-
