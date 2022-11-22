@@ -5,7 +5,7 @@ $linkedin_url = 'https://www.linkedin.com/in/mathis-gasparotto/';
 ?>
 
 <section class="section coordinates bg-light">
-  <div class="container">
+  <address class="container">
     <div class="single-coordinate">
       <a href="<?php echo $tel_url; ?>">
         <i class="fa fa-phone icon"></i>
@@ -33,5 +33,5 @@ $linkedin_url = 'https://www.linkedin.com/in/mathis-gasparotto/';
         <h4 class="text">Mathis GASPAROTTO</h4>
       </a>
     </div>
-  </div>
+  </address>
 </section>
