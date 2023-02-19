@@ -146,16 +146,16 @@ body {
 }
 
 .desktop {
-  display: none;
-  height: 0;
+  display: none !important;
+  height: 0 !important;
   @include media(laptop, desktop) {
-    display: initial;
-    height: initial;
+    display: initial !important;
+    height: initial !important;
   }
 }
 .mobile {
   @include media(laptop, desktop) {
-    display: none;
-    height: 0;
+    display: none !important;
+    height: 0 !important;
   }
 }
