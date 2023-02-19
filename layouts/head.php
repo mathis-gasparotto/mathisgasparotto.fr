@@ -12,3 +12,7 @@
 
   <title><?php echo $page_title; ?></title>
 </head>
+<body id="index body" class="loading">
+  <?php require(ROOT . 'layouts/loading.php') ?>
+  <div class="screen-container">
+    <div class="content">

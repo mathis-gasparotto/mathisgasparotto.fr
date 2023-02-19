@@ -2,9 +2,9 @@
   color: $white;
   .container {
     display: flex;
-    flex-direction: row;
-    @include mobile {
-      flex-direction: column;
+    flex-direction: column;
+    @include media(tablet-landscape, laptop, desktop) {
+      flex-direction: row;
     }
     align-items: center;
     gap: 60px;
@@ -13,9 +13,10 @@
     }
     .title-container {
       .title {
+        text-align: center;
         @include h2;
-        @include mobile {
-          text-align: center;
+        @include media(tablet-landscape, laptop, desktop) {
+          text-align: left;
         }
       }
     }

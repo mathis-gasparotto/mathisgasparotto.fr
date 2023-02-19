@@ -3,40 +3,79 @@
    width: 100%;
    margin: auto;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: space-evenly;
-   @include mobile {
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
+   align-items: center;
+   gap: 50px;
+   @include media(tablet-landscape, laptop, desktop) {
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
    }
    .skills-section {
      text-align: center;
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      align-items: center;
-     width: 30%;
      gap: 10px;
-     @include mobile {
+     @include tablet-portrait {
       width: $contentWidth;
      }
-     .img {
-       width: calc(40px + 2 * 12px);
-       height: calc(40px + 2 * 12px);
-       background-color: $primaryColor;
-       padding: 12px 0;
-       border-radius: 50%;
-       &.icon-dev {
-         padding: 10px;
+     @include media(tablet-landscape, laptop, desktop) {
+      width: 18%;
+      flex-direction: column !important;
+     }
+     &:nth-child(2n) {
+      flex-direction: row-reverse;
+     }
+     .img-container {
+      width: 30%;
+      @include tablet-portrait {
+        width: 40%;
+      }
+      @include media(tablet-landscape, laptop, desktop) {
+        width: unset;
+      }
+      .img {
+        transition: transform 0s !important;
+        height: 75px;
+        width: 75px;
+        @include media(tablet-portrait, tablet-landscape, laptop, desktop) {
+          width: 100px;
+          height: 100px;
+        }
+        //  width: calc(40px + 2 * 12px);
+        //  height: calc(40px + 2 * 12px);
+        //  background-color: $primaryColor;
+        //  padding: 12px 0;
+        //  border-radius: 50%;
+        path {
+        fill: $primaryColor;
+        }
+        //  &.icon-dev {
+        //    padding: 10px;
+        //  }
+      }
+     }
+     .skill-content {
+      width: 70%;
+      @include tablet-portrait {
+       width: 60%;
+      }
+      @include media(tablet-landscape, laptop, desktop) {
+        width: unset;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       .title {
+         @include h6;
+         @include bold;
        }
-     }
-     .title {
-       @include h6;
-       @include bold;
-     }
-     .text {
-       @include text;
-       @include light;
+       .text {
+         @include text;
+         @include light;
+       }
      }
    }
  }

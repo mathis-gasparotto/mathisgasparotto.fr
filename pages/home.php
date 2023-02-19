@@ -1,4 +1,4 @@
-<div class="page home-page">
+<div class="page home-page" id="top">
 
   <?php
 
@@ -13,10 +13,28 @@
   <?php 
   require ( ROOT . 'components/skills.php' );
   require ( ROOT . 'components/projects.php' );
-  require ( ROOT . 'components/who.php' );
-  require ( ROOT . 'components/futur_projects.php' );
-  require ( ROOT . 'components/cta.php' );
+  if(isMobile) {
+    require ( ROOT . 'components/futur_projects.php' );
+    require ( ROOT . 'components/who.php' );
+  } else {
+    require ( ROOT . 'components/who.php' );
+    require ( ROOT . 'components/futur_projects.php' );
+  }
   ?>
+  
+  <div class="desktop">
+    <?php 
+      require ( ROOT . 'components/cta.php' );
+    ?>
+  </div>
+  <div class="mobile">
+    <?php 
+      if(isMobile) {
+        require ( ROOT . 'components/coordinates.php' );
+        require ( ROOT . 'components/contact_form.php' );
+      }
+    ?>
+  </div>
 
   </div>
 

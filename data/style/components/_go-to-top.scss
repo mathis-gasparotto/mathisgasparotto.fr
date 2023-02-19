@@ -1,0 +1,37 @@
+.screen-container {
+  .go-to-top {
+    position: fixed;
+    right: 3%;
+    z-index: 99;
+    opacity: 0;
+    @include media (mobile, tablet-portrait, tablet-landscape) {
+      top: unset !important;
+      bottom: 105px;
+    }
+    @include responsive-transition;
+    @include media (laptop, desktop) {
+      top: 0;
+      right: 2%;
+    }
+    .go-to-top-link {
+      border-radius: 50%;
+      display: block;
+      padding: .5rem;
+      @include shadow-global;
+      .icon {
+        width: 30px;
+        display: block;
+        fill: $secondaryColor;
+      }
+    }
+    &:hover {
+      transform: translateY(-7px);
+    }
+  }
+
+  &.active {
+    .go-to-top {
+      display: none;
+    }
+  }
+}

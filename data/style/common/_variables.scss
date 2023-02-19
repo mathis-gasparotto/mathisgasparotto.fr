@@ -1,7 +1,10 @@
+$internalLinkPrefix: "/";
+
 $breakpoints: ( laptop: 1400px, tablet-landscape: 1200px, tablet-portrait: 1023px, mobile: 767px, );   // Max width for each devices
 
 //Colors
 $primaryColor: #fbb03b;
+$primaryColorDarkness: #d39e4a;
 $secondaryColor: #14171c;
 $headerColor: $secondaryColor;
 $textColor: $secondaryColor;

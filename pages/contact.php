@@ -1,4 +1,4 @@
-<div class="page contact-page">
+<div class="page contact-page" id="top">
 
   <?php
 

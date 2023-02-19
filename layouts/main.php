@@ -13,16 +13,17 @@ require_once ( ROOT . 'layouts/start_main_container.php' );
 
 </div>
 <?php
-$bp = ['cv', 'portfolio', 'contact'];
+$bp = ['cv', 'contact'];
 if ($page == 'cv') {
-  $bp = ['home', 'portfolio', 'contact'];
-} elseif ($page == 'portfolio') {
-  $bp = ['cv', 'home', 'contact'];
+  $bp = ['home', 'contact'];
 } elseif ($page == 'contact') {
-  $bp = ['cv', 'portfolio', 'home'];
+  $bp = ['cv', 'home'];
 }
-require_once ( ROOT . 'layouts/back-pages.php' );
+if (!isMobile) {
+  require_once ( ROOT . 'layouts/back-pages.php' );
+}
 require_once ( ROOT . 'layouts/end_main_container.php' );
-require_once ( ROOT . 'layouts/nav_links.php' );
+require_once ( ROOT . 'layouts/nav.php' );
+require_once ( ROOT . 'layouts/go-to-top.php' );
 require_once ( ROOT . 'layouts/foot.php' );
 ?>

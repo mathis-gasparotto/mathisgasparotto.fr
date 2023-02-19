@@ -58,7 +58,7 @@ if (!empty($_POST)) {
   }
 } ?>
 
-<section class="section contact-form bg-secondary">
+<section class="section contact-form bg-secondary" id="contact-form">
   <div class="container">
     <div class="title-container">
       <h2 class="title">Envoyez-moi un message</h2>

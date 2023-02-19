@@ -1,4 +1,4 @@
-<div class="page cv-page">
+<div class="page cv-page" id="top">
 
   <?php
 

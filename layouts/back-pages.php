@@ -15,7 +15,7 @@
 <div class="back-page three">
     
   <?php
-  require_once ( ROOT . 'pages/' . $bp[2] . '.php' );
+  //require_once ( ROOT . 'pages/' . $bp[2] . '.php' );
   ?>
 
 </div>

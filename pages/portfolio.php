@@ -1,4 +1,4 @@
-<div class="page portfolio-page">
+<div class="page portfolio-page" id="top">
 
   <?php
 
