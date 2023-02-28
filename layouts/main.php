@@ -19,10 +19,12 @@ if ($page == 'cv') {
 } elseif ($page == 'contact') {
   $bp = ['cv', 'home'];
 }
-if (!isMobile) {
+
+if (!IS_MOBILE) {
   require_once ( ROOT . 'layouts/back-pages.php' );
 }
 require_once ( ROOT . 'layouts/end_main_container.php' );
+require_once ( ROOT . 'layouts/need_reload.php' );
 require_once ( ROOT . 'layouts/nav.php' );
 require_once ( ROOT . 'layouts/go-to-top.php' );
 require_once ( ROOT . 'layouts/foot.php' );

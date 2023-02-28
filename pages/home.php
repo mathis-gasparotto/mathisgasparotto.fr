@@ -13,7 +13,7 @@
   <?php 
   require ( ROOT . 'components/skills.php' );
   require ( ROOT . 'components/projects.php' );
-  if(isMobile) {
+  if(IS_MOBILE) {
     require ( ROOT . 'components/futur_projects.php' );
     require ( ROOT . 'components/who.php' );
   } else {
@@ -29,7 +29,7 @@
   </div>
   <div class="mobile">
     <?php 
-      if(isMobile) {
+      if(IS_MOBILE) {
         require ( ROOT . 'components/coordinates.php' );
         require ( ROOT . 'components/contact_form.php' );
       }

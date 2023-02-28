@@ -2718,6 +2718,31 @@ body.loading .loading-screen {
   transition: 0.5s ease-in-out;
 }
 
+.need-reload {
+  background-color: #14171c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 30px;
+}
+.need-reload__text {
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 600;
+}
+.need-reload__btn {
+  font-size: 1em;
+}
+
 .page.cv-page .section.cv-dl-n-show .cv-container .cv-dl-btn {
   margin: auto;
   margin-bottom: 2rem;
