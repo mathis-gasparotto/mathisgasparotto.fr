@@ -2719,6 +2719,7 @@ body.loading .loading-screen {
 }
 
 .need-reload {
+  display: none;
   background-color: #14171c;
   position: absolute;
   top: 0;
@@ -2726,7 +2727,6 @@ body.loading .loading-screen {
   width: 100%;
   height: 100vh;
   z-index: 99999;
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -2736,11 +2736,69 @@ body.loading .loading-screen {
 .need-reload__text {
   text-align: center;
   color: #fff;
-  font-size: 4em;
+}
+.need-reload__text--main {
+  font-size: 3em;
   font-weight: 600;
+}
+.need-reload__text--sub {
+  margin-top: 1rem;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 767px) {
+  .need-reload__text--sub {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    margin-top: 2rem;
+  }
 }
 .need-reload__btn {
   font-size: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  body.device--desktop {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    overflow: hidden;
+  }
+  body.device--desktop .need-reload {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+  body.device--desktop {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    overflow: hidden;
+  }
+  body.device--desktop .need-reload {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+  body.device--desktop {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    overflow: hidden;
+  }
+  body.device--desktop .need-reload {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+  body.device--mobile {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    overflow: hidden;
+  }
+  body.device--mobile .need-reload {
+    display: flex;
+  }
+}
+@media screen and (min-width: calc(1400px + .01px)) {
+  body.device--mobile {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    overflow: hidden;
+  }
+  body.device--mobile .need-reload {
+    display: flex;
+  }
 }
 
 .page.cv-page .section.cv-dl-n-show .cv-container .cv-dl-btn {

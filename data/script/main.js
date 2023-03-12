@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  if (window.innerWidth > 1200) {
+    document.querySelector('body').classList.add('device--desktop')
+  } else {
+    document.querySelector('body').classList.add('device--mobile')
+  }
   setTimeout(function() {
     const body = document.getElementsByTagName('body')[0]
     body.classList.remove('loading')

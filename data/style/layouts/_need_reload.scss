@@ -1,4 +1,5 @@
 .need-reload {
+  display: none;
   background-color: $secondaryColor;
   position: absolute;
   top: 0;
@@ -6,7 +7,6 @@
   width: 100%;
   height: 100vh;
   z-index: 99999;
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,10 +15,39 @@
   &__text {
     text-align: center;
     color: $white;
-    font-size: $fsH1;
-    font-weight: $fwBold;
+    &--main {
+      font-size: $fsH2;
+      font-weight: $fwBold;
+    }
+    &--sub {
+      margin-top: $marginSpacing-3;
+      font-size: $fsH6;
+      @include mobile {
+        margin-top: $marginSpacing-2;
+      }
+    }
   }
   &__btn {
     font-size: 1em;
+  }
+}
+body {
+  &.device {
+    &--desktop {
+      @include media(mobile, tablet-portrait, tablet-landscape) {
+        overflow: hidden;
+        .need-reload {
+          display: flex;
+        }
+      }
+    }
+    &--mobile {
+      @include media(laptop, desktop) {
+        overflow: hidden;
+        .need-reload {
+          display: flex;
+        }
+      }
+    }
   }
 }
