@@ -5,7 +5,7 @@
   $first_word_h1 = "Mon";
   $second_word_h1 = "Portfolio";
 
-  // require ( ROOT . 'layouts/hero.php' );
+  // require ( ROOT . 'components/layouts/hero.php' );
   ?>
 
   <div class="page-content" id="page-content">
@@ -17,11 +17,11 @@
   $btn_new_tab = true;
   $btn_icon = "fa-github";
   $btn_add_class = "btn-primary";
-  require ( ROOT . 'layouts/maintenance.php' );
+  require ( ROOT . 'components/layouts/maintenance.php' );
   ?>
 
   </div>
 
-<?php require ( ROOT . 'layouts/footer.php' ); ?>
+<?php require ( ROOT . 'components/layouts/footer.php' ); ?>
 
 </div>

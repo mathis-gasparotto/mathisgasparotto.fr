@@ -14,7 +14,7 @@
             $btn_dl_add_class = "btn-secondary cv-dl-btn left";
             $btn_dl_file_name = "CV_DeveloppeurWeb_MathisGasparotto_RVB.pdf";
             $btn_dl_text = "Télécharger mon CV";
-            require ( ROOT . 'common/btn_dl.php' );
+            require ( ROOT . 'components/common/btn_dl.php' );
           ?>
           <a href="#contact" class="btn btn-primary right scroll-animation">Contact</a>
         </div>

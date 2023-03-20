@@ -5,7 +5,7 @@
   $first_word_h1 = "Développeur";
   $second_word_h1 = "Web";
 
-  require ( ROOT . 'layouts/main_hero.php' );
+  require ( ROOT . 'components/layouts/main_hero.php' );
   ?>
 
   <div class="page-content" id="page-content">
@@ -38,6 +38,6 @@
 
   </div>
 
-<?php require ( ROOT . 'layouts/footer.php' ); ?>
+<?php require ( ROOT . 'components/layouts/footer.php' ); ?>
 
 </div>
