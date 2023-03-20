@@ -1,8 +1,18 @@
 $(document).ready(function() {
   if (window.innerWidth > 1200) {
     document.querySelector('body').classList.add('device--desktop')
+    window.addEventListener('resize', function(event) {
+      if (window.innerWidth < 1200) {
+        window.location.reload()
+      }
+    }, true)
   } else {
     document.querySelector('body').classList.add('device--mobile')
+    window.addEventListener('resize', function(event) {
+      if (window.innerWidth > 1200) {
+        window.location.reload()
+      }
+    }, true)
   }
   setTimeout(function() {
     const body = document.getElementsByTagName('body')[0]

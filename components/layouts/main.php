@@ -24,7 +24,7 @@ if (!IS_MOBILE) {
   require_once ( ROOT . 'components/layouts/back-pages.php' );
 }
 require_once ( ROOT . 'components/layouts/end_main_container.php' );
-require_once ( ROOT . 'components/layouts/need_reload.php' );
+require_once ( ROOT . 'components/layouts/reload_in_progress.php' );
 require_once ( ROOT . 'components/layouts/nav.php' );
 require_once ( ROOT . 'components/layouts/go-to-top.php' );
 require_once ( ROOT . 'components/layouts/foot.php' );
