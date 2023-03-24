@@ -3,13 +3,15 @@ $(document).ready(function() {
     document.querySelector('body').classList.add('device--desktop')
     window.addEventListener('resize', function(event) {
       if (window.innerWidth < 1200) {
-        window.location.reload()
+        window.scrollTo(0, 0)
+        window.location.replace('/')
       }
     }, true)
   } else {
     document.querySelector('body').classList.add('device--mobile')
     window.addEventListener('resize', function(event) {
       if (window.innerWidth > 1200) {
+        window.scrollTo(0, 0)
         window.location.reload()
       }
     }, true)
