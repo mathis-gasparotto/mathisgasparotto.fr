@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mathisgasparotto.fr
+Token: 567c052c0dd17d90da03f3538904dd4c1d9d5107337d1fb8a1b5de4f3bc15498
