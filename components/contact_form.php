@@ -3,9 +3,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
 // use PHPMailer\PHPMailer\SMTP;
 
-$phpmailer = new PHPMailer();
-$phpmailer->setLanguage('fr');
-$phpmailer->CharSet = 'UTF-8';
+require ( ROOT . 'vendor/phpmailer/phpmailer/src/PHPMailer.php' );
+// require ( ROOT . 'vendor/phpmailer/phpmailer/src/Exception.php' );
+// require ( ROOT . 'vendor/phpmailer/phpmailer/src/SMTP.php' );
 
 $errors = [];
 if (!empty($_POST)) {
