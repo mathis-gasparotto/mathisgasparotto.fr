@@ -7,7 +7,7 @@ $projects = [
     'img_url' => "/data/img/site-personnel-mathis-gasparotto-developpeur-projet.jpg",
     'img_alt' => "site-personnel-mathis-gasparotto-developpeur-projet",
     'img_title' => "Illustration de mon projet personnel",
-    'link' => "https://github.com/Mathis-Gasparotto/dev.mathisgasparotto.fr",
+    'link' => "https://github.com/Mathis-Gasparotto/mathisgasparotto.fr",
   ],
   [
     'title' => "Générateur de facture", 
