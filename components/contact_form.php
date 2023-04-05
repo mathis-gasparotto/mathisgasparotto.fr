@@ -3,10 +3,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
 // use PHPMailer\PHPMailer\SMTP;
 
-require ( ROOT . 'modules/PHPMailer/src/PHPMailer.php' );
-// require ( ROOT . 'modules/PHPMailer/src/Exception.php' );
-// require ( ROOT . 'modules/PHPMailer/src/SMTP.php' );
-
 $phpmailer = new PHPMailer();
 $phpmailer->setLanguage('fr');
 $phpmailer->CharSet = 'UTF-8';
