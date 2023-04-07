@@ -50,4 +50,18 @@
     color: #dc3545;
     font-weight: 300;
   }
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .5;
+  }
+  &-disabled {
+    &-msg {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: red;
+      text-align: center;
+      margin: 0;
+    }
+  }
 }
