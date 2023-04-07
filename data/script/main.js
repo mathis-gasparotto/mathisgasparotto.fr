@@ -43,6 +43,7 @@ $(document).ready(function() {
     const contact_form = document.getElementById("contact-form")
 
     const desktop_nav_links = document.querySelectorAll(".nav-desktop .nav-link")
+    const section_links = document.querySelectorAll(".section-link")
 
     const nav_skills = document.getElementById('nav-skills')
     const nav_projects = document.getElementById('nav-projects')
@@ -60,6 +61,8 @@ $(document).ready(function() {
     const skills_imgs = document.querySelectorAll(".skills .skills-section .img-container .img")
 
     const skills_top = skills.getBoundingClientRect().top
+    const projects_top = projects.getBoundingClientRect().top
+    const who_top = who.getBoundingClientRect().top
 
     window.onscroll = function() {
       const documentHeight_mobile = body.getBoundingClientRect().height - window.innerHeight
@@ -255,18 +258,18 @@ $(document).ready(function() {
         container.classList.remove("active")
       })
   
-      nav_links.forEach(nav_link => {
-        nav_link.addEventListener("click", () => {
-          container.classList.remove("active")
-        })
-      })
+      // nav_links.forEach(nav_link => {
+      //   nav_link.addEventListener("click", () => {
+      //     container.classList.remove("active")
+      //   })
+      // })
 
       desktop_nav_links.forEach(nav_link => {
         nav_link.addEventListener("click", () => {
           container.classList.remove("active")
           event.preventDefault()
           window.scroll({
-            top: (eval(nav_link.getAttribute('href').replace('#', '') + '_top') - header_height) + 5,
+            top: (eval(nav_link.getAttribute('href').replace('/#', '') + '_top') - header_height) + 5,
             behavior: 'smooth',
           })
         })
