@@ -9,20 +9,24 @@ require ( ROOT . 'vendor/phpmailer/phpmailer/src/PHPMailer.php' );
 
 $errors = [];
 if (!empty($_POST)) {
-  $lname = $_POST['lname'];
-  $fname = $_POST['fname'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+  $lname = trim($_POST['lname']);
+  $fname = trim($_POST['fname']);
+  $email = trim($_POST['email']);
+  $subject = trim($_POST['subject']);
+  $message = trim($_POST['message']);
   if (empty($lname)) {
     $errors['lname'] = 'Le nom est requis';
   }
+  $errors['fname'] = 'Le prénom est requis';
   if (empty($fname)) {
-    $errors['fname'] = 'Le prénom est requis';
   }
   if (empty($email)) {
     $errors['email'] = 'L\'adresse mail est requis';
   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors['email'] = 'L\'adresse mail est invalide';
+  }
+  if (empty($subject)) {
+    $errors['subject'] = 'L\'objet est requis';
   }
   if (empty($message)) {
     $errors['message'] = 'Un message est requis';
@@ -34,17 +38,18 @@ if (!empty($_POST)) {
     
     $phpmailer->AddAddress('mathis.gasparotto@hotmail.com', 'Mathis Gasparotto');
     
-    $phpmailer->Subject    =  "Nouveau message de " . trim($_POST["fname"]) . " " . trim($_POST["lname"]) . " (from mathisgasparotto.fr)";
+    $phpmailer->Subject    =  trim($_POST["subject"]) . " - " . trim($_POST["fname"]) . " " . trim($_POST["lname"]) . " (from mathisgasparotto.fr)";
     $phpmailer->WordWrap   = 50;
     $phpmailer->IsHTML(true);
     $phpmailer->MsgHTML('
-    <div><b>Nom : </b>'.$_POST["lname"].'</div>
-    <div><b>Prénom : </b>'.$_POST["fname"].'</div>
-    <div><b>Email : </b><a href="mailto:'.$_POST["email"].'">'.$_POST["email"].'</a></div>
+    <div><b>Nom : </b>'.trim($_POST["lname"]).'</div>
+    <div><b>Prénom : </b>'.trim($_POST["fname"]).'</div>
+    <div><b>Email : </b><a href="mailto:'.trim($_POST["email"]).'">'.trim($_POST["email"]).'</a></div>
+    <div><b>Objet : </b>'.trim($_POST["subject"]).'</div>
     <div><b>Message :</b></div>
-    <div><p style="margin:0;">'.$_POST["message"].'</p></div>
+    <div><p style="margin:0;">'.trim($_POST["message"]).'</p></div>
     ');
-    $phpmailer->AltBody = $_POST["message"];
+    $phpmailer->AltBody = trim($_POST["message"]);
     
     if (!$phpmailer->send()) {
       $sendError = $phpmailer->ErrorInfo;
@@ -88,9 +93,16 @@ $disabled = false;
         </div>
         <div class="input-container">
           <label for="email" class="required">Email</label>
-          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="email" id="email" name="email" placeholder="Adresse Email" />
           <?php if(isset($errors['email'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['email']; ?></div>
+          <?php } ?>
+        </div>
+        <div class="input-container">
+          <label for="subject" class="required">Objet</label>
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['subject'])) ? 'is-invalid' : '') ?>" type="text" id="subject" name="subject" placeholder="Objet de votre message..." />
+          <?php if(isset($errors['subject'])){ ?>
+            <div class="invalid-feedback"><?php echo $errors['subject']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
@@ -125,9 +137,16 @@ $disabled = false;
         </div>
         <div class="input-container">
           <label for="email" class="required">Email</label>
-          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="email" id="email" name="email" placeholder="Adresse Email" />
           <?php if(isset($errors['email'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['email']; ?></div>
+          <?php } ?>
+        </div>
+        <div class="input-container">
+          <label for="subject" class="required">Objet</label>
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['subject'])) ? 'is-invalid' : '') ?>" type="text" id="subject" name="subject" placeholder="Objet de votre message..." />
+          <?php if(isset($errors['subject'])){ ?>
+            <div class="invalid-feedback"><?php echo $errors['subject']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">

@@ -483,36 +483,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 .desktop {
-  display: none !important;
-  height: 0 !important;
+  display: none;
+  height: 0;
 }
 @media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
   .desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
-    display: initial !important;
-    height: initial !important;
+    display: initial;
+    height: initial;
   }
 }
 @media screen and (min-width: calc(1400px + .01px)) {
   .desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
-    display: initial !important;
-    height: initial !important;
+    display: initial;
+    height: initial;
   }
 }
 
 @media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
   .mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
-    display: none !important;
-    height: 0 !important;
+    display: none;
+    height: 0;
   }
 }
 @media screen and (min-width: calc(1400px + .01px)) {
   .mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
-    display: none !important;
-    height: 0 !important;
+    display: none;
+    height: 0;
   }
 }
 
