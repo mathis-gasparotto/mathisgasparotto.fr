@@ -100,7 +100,7 @@ $disabled = false;
             <div class="invalid-feedback"><?php echo $errors['message']; ?></div>
           <?php } ?>
         </div>
-        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary disabled" value="Envoyer" />
+        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary <?php if ($disabled) return 'disabled' ?>" value="Envoyer" />
       </form>
       <form method="POST" class="form mobile" action="/#contact-form">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
@@ -137,7 +137,7 @@ $disabled = false;
             <div class="invalid-feedback"><?php echo $errors['message']; ?></div>
           <?php } ?>
         </div>
-        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary disabled" value="Envoyer" />
+        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary <?php if ($disabled) return 'disabled' ?>" value="Envoyer" />
       </form>
     </div>
   </div>
