@@ -52,7 +52,9 @@ if (!empty($_POST)) {
       $sendSuccess = 'Message bien envoyé';
     }
   }
-} ?>
+} 
+$disabled = false;
+?>
 
 <section class="section contact-form bg-secondary" id="contact-form">
   <div class="container">
@@ -60,7 +62,9 @@ if (!empty($_POST)) {
       <h2 class="title">Envoyez-moi un message</h2>
     </div>
     <div class="form-container">
-      <p class="form-disabled-msg">Formulaire de contact indisponible pour le moment</p>
+      <?php if ($disabled) { ?>
+        <p class="form-disabled-msg">Formulaire de contact indisponible pour le moment</p>
+      <?php } ?>
       <form method="POST" class="form desktop" action="/contact/">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
           <div class="alert alert-success send-info"><?php echo $sendSuccess; ?></div>
@@ -70,33 +74,33 @@ if (!empty($_POST)) {
         <?php } ?>
         <div class="input-container">
           <label for="lname" class="required">Nom</label>
-          <input disabled class="<?php echo((!empty($errors['lname'])) ? 'is-invalid' : '') ?>" type="text" id="lname" name="lname" placeholder="Votre nom" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['lname'])) ? 'is-invalid' : '') ?>" type="text" id="lname" name="lname" placeholder="Votre nom" />
           <?php if(isset($errors['lname'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['lname']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="fname" class="required">Prénom</label>
-          <input disabled class="<?php echo((!empty($errors['fname'])) ? 'is-invalid' : '') ?>" type="text" id="fname" name="fname" placeholder="Votre prénom" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['fname'])) ? 'is-invalid' : '') ?>" type="text" id="fname" name="fname" placeholder="Votre prénom" />
           <?php if(isset($errors['fname'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['fname']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="email" class="required">Email</label>
-          <input disabled class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
           <?php if(isset($errors['email'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['email']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="message" class="required">Message</label>
-          <textarea disabled class="<?php echo((!empty($errors['message'])) ? 'is-invalid' : '') ?>" name="message" id="message" cols="30" rows="10" placeholder="Indiquez votre message ici"></textarea>
+          <textarea <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['message'])) ? 'is-invalid' : '') ?>" name="message" id="message" cols="30" rows="10" placeholder="Indiquez votre message ici"></textarea>
           <?php if(isset($errors['message'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['message']; ?></div>
           <?php } ?>
         </div>
-        <input disabled type="submit" class="btn btn-primary disabled" value="Envoyer" />
+        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary disabled" value="Envoyer" />
       </form>
       <form method="POST" class="form mobile" action="/#contact-form">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
@@ -107,33 +111,33 @@ if (!empty($_POST)) {
         <?php } ?>
         <div class="input-container">
           <label for="lname" class="required">Nom</label>
-          <input disabled class="<?php echo((!empty($errors['lname'])) ? 'is-invalid' : '') ?>" type="text" id="lname" name="lname" placeholder="Votre nom" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['lname'])) ? 'is-invalid' : '') ?>" type="text" id="lname" name="lname" placeholder="Votre nom" />
           <?php if(isset($errors['lname'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['lname']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="fname" class="required">Prénom</label>
-          <input disabled class="<?php echo((!empty($errors['fname'])) ? 'is-invalid' : '') ?>" type="text" id="fname" name="fname" placeholder="Votre prénom" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['fname'])) ? 'is-invalid' : '') ?>" type="text" id="fname" name="fname" placeholder="Votre prénom" />
           <?php if(isset($errors['fname'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['fname']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="email" class="required">Email</label>
-          <input disabled class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
+          <input <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['email'])) ? 'is-invalid' : '') ?>" type="text" id="email" name="email" placeholder="Adresse Email" />
           <?php if(isset($errors['email'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['email']; ?></div>
           <?php } ?>
         </div>
         <div class="input-container">
           <label for="message" class="required">Message</label>
-          <textarea disabled class="<?php echo((!empty($errors['message'])) ? 'is-invalid' : '') ?>" name="message" id="message" cols="30" rows="10" placeholder="Indiquez votre message ici"></textarea>
+          <textarea <?php if ($disabled) return 'disabled' ?> class="<?php echo((!empty($errors['message'])) ? 'is-invalid' : '') ?>" name="message" id="message" cols="30" rows="10" placeholder="Indiquez votre message ici"></textarea>
           <?php if(isset($errors['message'])){ ?>
             <div class="invalid-feedback"><?php echo $errors['message']; ?></div>
           <?php } ?>
         </div>
-        <input disabled type="submit" class="btn btn-primary disabled" value="Envoyer" />
+        <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary disabled" value="Envoyer" />
       </form>
     </div>
   </div>
