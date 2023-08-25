@@ -479,7 +479,34 @@ body::-webkit-scrollbar-thumb {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
+}
+.d-flex {
+  display: flex !important;
+}
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+  .d-lg-none {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: none !important;
+  }
+}
+@media screen and (min-width: calc(1400px + .01px)) {
+  .d-lg-none {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+  .d-lg-flex {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: flex !important;
+  }
+}
+@media screen and (min-width: calc(1400px + .01px)) {
+  .d-lg-flex {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: flex !important;
+  }
 }
 
 .desktop {
@@ -2124,8 +2151,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
     background-color: $black;*/
   }
-}
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
   .screen-container.active .nav-desktop .nav-items .nav-item {
     animation: appear-links 0.5s forwards ease var(--i);
   }
@@ -2238,8 +2263,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
     background-color: $black;*/
   }
-}
-@media screen and (min-width: calc(1400px + .01px)) {
   .screen-container.active .nav-desktop .nav-items .nav-item {
     animation: appear-links 0.5s forwards ease var(--i);
   }
@@ -2503,8 +2526,6 @@ body .screen-container .content .header {
   body .screen-container .header .menu .logo .logo-svg .line {
     stroke-width: 20px;
   }
-}
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
   body .screen-container .header .menu .hamburger-menu {
     height: 3.5rem;
     width: 3.5rem;
@@ -2541,8 +2562,6 @@ body .screen-container .content .header {
   body .screen-container .header .menu .hamburger-menu .bar::after {
     transform: translateY(9px);
   }
-}
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
   body .screen-container.active .header {
     color: #000;
   }
@@ -2622,8 +2641,6 @@ body .screen-container .content .header {
   body .screen-container .header .menu .logo .logo-svg .line {
     stroke-width: 20px;
   }
-}
-@media screen and (min-width: calc(1400px + .01px)) {
   body .screen-container .header .menu .hamburger-menu {
     height: 3.5rem;
     width: 3.5rem;
@@ -2660,8 +2677,6 @@ body .screen-container .content .header {
   body .screen-container .header .menu .hamburger-menu .bar::after {
     transform: translateY(9px);
   }
-}
-@media screen and (min-width: calc(1400px + .01px)) {
   body .screen-container.active .header {
     color: #000;
   }
