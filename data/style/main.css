@@ -544,7 +544,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .form {
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   gap: 30px;
 }
