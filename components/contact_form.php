@@ -1,11 +1,13 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception;
 // use PHPMailer\PHPMailer\SMTP;
 
 require ( ROOT . 'vendor/phpmailer/phpmailer/src/PHPMailer.php' );
-// require ( ROOT . 'vendor/phpmailer/phpmailer/src/Exception.php' );
+require ( ROOT . 'vendor/phpmailer/phpmailer/src/Exception.php' );
 // require ( ROOT . 'vendor/phpmailer/phpmailer/src/SMTP.php' );
+
+$phpmailer = new PHPMailer(true);
 
 $errors = [];
 if (!empty($_POST)) {
@@ -33,8 +35,7 @@ if (!empty($_POST)) {
   }
   if (empty($errors)) {
     
-    $phpmailer->From       = trim($_POST["email"]);
-    $phpmailer->FromName   = trim($_POST["fname"]) . " " . trim($_POST["lname"]);
+    $phpmailer->setFrom(trim($_POST["email"]), trim($_POST["fname"]) . " " . trim($_POST["lname"]));
     
     $phpmailer->AddAddress('mathis.gasparotto@hotmail.com', 'Mathis Gasparotto');
     
