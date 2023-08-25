@@ -142,20 +142,20 @@ body {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .desktop {
-  display: none;
+  display: none !important;
   height: 0;
   @include media(laptop, desktop) {
-    display: initial;
+    display: initial !important;
     height: initial;
   }
 }
 .mobile {
   @include media(laptop, desktop) {
-    display: none;
+    display: none !important;
     height: 0;
   }
 }
