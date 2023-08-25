@@ -9,8 +9,8 @@
           <h3 class="project-title">Application mobile</h3>
         </div>
       </div>
-      <!-- <a class="second project-container" href="#">
-      <div class="second project-container">
+      <!-- <a class="second project-container" href="#"> -->
+      <!-- <div class="second project-container">
         <div class="project-img-container">
           <img src="/data/img/008899_portrait.png" alt="Image de projet" title="Image de projet" class="project-img img" loading="lazy" />
           <h3 class="project-title">Titre du projet</h3>
