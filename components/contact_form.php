@@ -17,8 +17,8 @@ if (!empty($_POST)) {
   if (empty($lname)) {
     $errors['lname'] = 'Le nom est requis';
   }
-  $errors['fname'] = 'Le prénom est requis';
   if (empty($fname)) {
+    $errors['fname'] = 'Le prénom est requis';
   }
   if (empty($email)) {
     $errors['email'] = 'L\'adresse mail est requis';
