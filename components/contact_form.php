@@ -70,7 +70,7 @@ $disabled = false;
       <?php if ($disabled) { ?>
         <p class="form-disabled-msg">Formulaire de contact indisponible pour le moment</p>
       <?php } ?>
-      <form method="POST" class="form desktop" action="/contact/">
+      <form method="POST" class="form desktop d-none d-lg-flex" action="/contact/">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
           <div class="alert alert-success send-info"><?php echo $sendSuccess; ?></div>
         <?php } ?>
@@ -114,7 +114,7 @@ $disabled = false;
         </div>
         <input <?php if ($disabled) return 'disabled' ?> type="submit" class="btn btn-primary <?php if ($disabled) return 'disabled' ?>" value="Envoyer" />
       </form>
-      <form method="POST" class="form mobile" action="/#contact-form">
+      <form method="POST" class="form mobile d-flex d-lg-none" action="/#contact-form">
         <?php if (isset($sendSuccess) && $sendSuccess) { ?>
           <div class="alert alert-success send-info"><?php echo $sendSuccess; ?></div>
         <?php } ?>

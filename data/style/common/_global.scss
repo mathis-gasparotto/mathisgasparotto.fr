@@ -141,21 +141,38 @@ body {
   text-align: center;
 }
 
-.d-none {
-  display: none !important;
+.d {
+  &-none {
+    display: none !important;
+  }
+  &-flex {
+    display: flex !important;
+  }
+  &-lg {
+    &-none {
+      @include media(laptop, desktop) {
+        display: none !important;
+      }
+    }
+    &-flex {
+      @include media(laptop, desktop) {
+        display: flex !important;
+      }
+    }
+  }
 }
 
 .desktop {
-  display: none !important;
+  display: none;
   height: 0;
   @include media(laptop, desktop) {
-    display: initial !important;
+    display: initial;
     height: initial;
   }
 }
 .mobile {
   @include media(laptop, desktop) {
-    display: none !important;
+    display: none;
     height: 0;
   }
 }
