@@ -1,0 +1,34 @@
+{
+    "name": "mathisgaparotto.me",
+    "host": "",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "",
+    "password": "",
+    "remotePath": "/mathisgasparotto.me/",
+    "uploadOnSave": false,
+    "useTempFile": true,
+    "openSsh": true,
+    "downloadOnOpen": true,
+    "syncOption": {
+        "delete": true,
+        "skipCreate": false,
+        "ignoreExisting": false,
+        "update": true
+    },
+    "watcher": {
+        "files": "**/*",
+        "autoUpload": true,
+        "autoDelete": true
+    },
+    "ignore": [
+        "**/.vscode/**",
+        "**/.git/**",
+        "**/.trash/**",
+        "**/.github/**",
+        "**/.well-know/**",
+        "**/README.md",
+        "**/.gitignore",
+        "**/.DS_Store"
+    ]
+}

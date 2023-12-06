@@ -1,2 +1,3 @@
 .trash/
 vendor/
+.vscode/sftp.json
