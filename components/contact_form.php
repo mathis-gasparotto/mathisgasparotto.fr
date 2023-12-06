@@ -35,7 +35,9 @@ if (!empty($_POST)) {
   }
   if (empty($errors)) {
     
-    $phpmailer->setFrom(trim($_POST["email"]), trim($_POST["fname"]) . " " . trim($_POST["lname"]));
+    $phpmailer->setFrom('no-reply@mathisgasparotto.me', trim($_POST["fname"]) . " " . trim($_POST["lname"]));
+
+    $phpmailer->AddReplyTo(trim($_POST["email"]), trim($_POST["fname"]) . " " . trim($_POST["lname"]));
     
     $phpmailer->AddAddress('mathis.gasparotto@hotmail.com', 'Mathis Gasparotto');
     
@@ -44,11 +46,11 @@ if (!empty($_POST)) {
     $phpmailer->IsHTML(true);
     $phpmailer->MsgHTML('
     <div><b>Nom : </b>'.trim($_POST["lname"]).'</div>
-    <div><b>Prénom : </b>'.trim($_POST["fname"]).'</div>
+    <div><b>Pr&eacute;nom : </b>'.trim($_POST["fname"]).'</div>
     <div><b>Email : </b><a href="mailto:'.trim($_POST["email"]).'">'.trim($_POST["email"]).'</a></div>
     <div><b>Objet : </b>'.trim($_POST["subject"]).'</div>
     <div><b>Message :</b></div>
-    <div><p style="margin:0;">'.trim($_POST["message"]).'</p></div>
+    <div><p style="margin:0;">'. preg_replace("/\r\n|\r|\n/", '</p><p>', trim($_POST["message"])) .'</p></div>
     ');
     $phpmailer->AltBody = trim($_POST["message"]);
     
@@ -59,7 +61,7 @@ if (!empty($_POST)) {
     }
   }
 } 
-$disabled = true;
+$disabled = false;
 ?>
 
 <section class="section contact-form bg-secondary" id="contact-form">
