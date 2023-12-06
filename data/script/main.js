@@ -23,7 +23,8 @@ $(document).ready(function() {
     const header = document.getElementById("header")
     const header_height = header.getBoundingClientRect().height
     const mobile_navbar = document.querySelector(".nav-mobile")
-    const mobile_navbar_height = mobile_navbar.getBoundingClientRect().height
+    // const mobile_navbar_height = mobile_navbar.getBoundingClientRect().height
+    const mobile_navbar_height = 86.58
 
     const main = document.querySelector(".main .page")
 
