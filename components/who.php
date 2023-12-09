@@ -6,7 +6,7 @@
     <div class="right content-container">
       <h2 class="title">Qui suis-je ?</h2>
       <p class="text">
-        Je suis un jeune étudiant passionné par l’informatique en général, mais surtout par le développement Web.<br/> J’étudie actuellement à l’école de MyDigitalSchool en 3ème année de Bachelor Web & Multimédia, où j'ai découvert un vrai passion pour le <strong>développement web</strong>. Je suis principalement passioné par le <strong>développement Back-End</strong>, avec un petit penchant pour le language de programme <strong>PHP</strong>.
+        Je suis un jeune étudiant passionné par l'informatique en général, mais surtout par le développement Web.<br/> J'étudie actuellement à l'école de MyDigitalSchool en 3ème année de Bachelor Web & Multimédia, où j'ai découvert un vrai passion pour le <strong>développement web</strong>. Je suis principalement passioné par le <strong>développement Back-End</strong>, avec un petit penchant pour le language de programme <strong>PHP</strong>.
       </p>
       <a href="<?php echo $cv_url; ?>" class="btn btn-primary changing-page-link cv_link scroll-to-top">Mon CV</a>
     </div>

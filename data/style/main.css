@@ -201,25 +201,25 @@ body {
   font-family: "Poppins", sans-serif;
   color: #14171c;
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     font-size: 15px;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     font-size: 15px;
@@ -484,25 +484,25 @@ body::-webkit-scrollbar-thumb {
 .d-flex {
   display: flex !important;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .d-lg-none {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none !important;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .d-lg-none {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none !important;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .d-lg-flex {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: flex !important;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .d-lg-flex {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: flex !important;
@@ -513,14 +513,14 @@ body::-webkit-scrollbar-thumb {
   display: none;
   height: 0;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: initial;
     height: initial;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: initial;
@@ -528,14 +528,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
     height: 0;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
@@ -776,7 +776,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 50px;
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.skills .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -784,7 +784,7 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.skills .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -792,7 +792,7 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.skills .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -807,27 +807,27 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 10px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.skills .container .skills-section {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 75%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.skills .container .skills-section {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 18%;
     flex-direction: column !important;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.skills .container .skills-section {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 18%;
     flex-direction: column !important;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.skills .container .skills-section {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 18%;
@@ -840,25 +840,25 @@ body::-webkit-scrollbar-thumb {
 .section.skills .container .skills-section .img-container {
   width: 30%;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.skills .container .skills-section .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 40%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.skills .container .skills-section .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.skills .container .skills-section .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.skills .container .skills-section .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
@@ -869,28 +869,28 @@ body::-webkit-scrollbar-thumb {
   height: 75px;
   width: 75px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.skills .container .skills-section .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100px;
     height: 100px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.skills .container .skills-section .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100px;
     height: 100px;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.skills .container .skills-section .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100px;
     height: 100px;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.skills .container .skills-section .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100px;
@@ -906,25 +906,25 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.skills .container .skills-section .skill-content {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 60%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.skills .container .skills-section .skill-content {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.skills .container .skills-section .skill-content {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.skills .container .skills-section .skill-content {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: unset;
@@ -950,7 +950,7 @@ body::-webkit-scrollbar-thumb {
   gap: 70px;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: 0;
@@ -958,7 +958,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: 0;
@@ -966,7 +966,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: 0;
@@ -974,7 +974,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: 0;
@@ -996,31 +996,31 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   height: 300px;
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     min-height: 500px;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     min-height: 520px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     min-height: 490px;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     min-height: 600px;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform: scale(1.01);
@@ -1028,7 +1028,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform: scale(1.01);
@@ -1036,7 +1036,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform: scale(1.01);
@@ -1044,7 +1044,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .projects-container .project-container .img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform: scale(1.01);
@@ -1080,28 +1080,28 @@ body::-webkit-scrollbar-thumb {
   padding: 2em 0;
   text-align: center;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .projects-container .project-container .text-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 55%;
     text-align: left;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .projects-container .project-container .text-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 55%;
     text-align: left;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .projects-container .project-container .text-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 55%;
     text-align: left;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .projects-container .project-container .text-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 55%;
@@ -1111,7 +1111,7 @@ body::-webkit-scrollbar-thumb {
 .section.projects .container .projects-container .project-container .text-container .content {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .projects-container .project-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     background-color: #fff;
@@ -1122,7 +1122,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row-reverse;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .projects-container .project-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     background-color: #fff;
@@ -1133,7 +1133,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row-reverse;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .projects-container .project-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     background-color: #fff;
@@ -1144,7 +1144,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row-reverse;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .projects-container .project-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     background-color: #fff;
@@ -1158,25 +1158,25 @@ body::-webkit-scrollbar-thumb {
 .section.projects .container .section-title {
   text-align: center;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .container .section-title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .container .section-title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .container .section-title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .container .section-title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
@@ -1191,52 +1191,52 @@ body::-webkit-scrollbar-thumb {
   background-color: #fbb03b;
   padding: 15px 0;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: inherit;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: inherit;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: inherit;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: inherit;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     gap: 0;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     gap: 0;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     gap: 0;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .projects-show-more {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -1250,28 +1250,28 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   margin: auto;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.projects .projects-show-more .left,
   .section.projects .projects-show-more .right {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.projects .projects-show-more .left,
   .section.projects .projects-show-more .right {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100%;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.projects .projects-show-more .left,
   .section.projects .projects-show-more .right {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 100%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.projects .projects-show-more .left,
   .section.projects .projects-show-more .right {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
@@ -1286,28 +1286,28 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   text-align: center;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.who .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     text-align: left;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.who .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     text-align: left;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.who .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
     text-align: left;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.who .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -1326,52 +1326,52 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   border-radius: 50%;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.who .container .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 100%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.who .container .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 100%;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.who .container .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 100%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.who .container .img-container .img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 100%;
   }
 }
 .section.who .container .content-container .text {
-  margin-top: 1rem;
+  margin: 1rem 0 2rem;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.who .container .content-container .text {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     margin: 2rem 0;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.who .container .content-container .text {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     margin: 2rem 0;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.who .container .content-container .text {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     margin: 2rem 0;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.who .container .content-container .text {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     margin: 2rem 0;
@@ -1400,7 +1400,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.coordinates .container .wrapper {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
@@ -1408,7 +1408,7 @@ body::-webkit-scrollbar-thumb {
     gap: 0;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.coordinates .container .wrapper {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
@@ -1416,7 +1416,7 @@ body::-webkit-scrollbar-thumb {
     gap: 0;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.coordinates .container .wrapper {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
@@ -1424,7 +1424,7 @@ body::-webkit-scrollbar-thumb {
     gap: 0;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.coordinates .container .wrapper {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
@@ -1442,25 +1442,25 @@ body::-webkit-scrollbar-thumb {
   padding: 40px;
   gap: 10px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.coordinates .container .wrapper .single-coordinate {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 35%;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.coordinates .container .wrapper .single-coordinate {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 35%;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.coordinates .container .wrapper .single-coordinate {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 35%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.coordinates .container .wrapper .single-coordinate {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 35%;
@@ -1493,19 +1493,19 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 60px;
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.contact-form .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.contact-form .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.contact-form .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -1518,19 +1518,19 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-size: 3em;
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.contact-form .container .title-container .title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     text-align: left;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.contact-form .container .title-container .title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     text-align: left;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.contact-form .container .title-container .title {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     text-align: left;
@@ -1551,28 +1551,28 @@ body::-webkit-scrollbar-thumb {
     bottom: 105px;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .screen-container .go-to-top {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     top: unset !important;
     bottom: 105px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .screen-container .go-to-top {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     top: unset !important;
     bottom: 105px;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container .go-to-top {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     top: 0;
     right: 2%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .screen-container .go-to-top {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     top: 0;
@@ -1614,13 +1614,13 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 40px;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.futur-projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: 2rem;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.futur-projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: unset;
@@ -1631,7 +1631,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.futur-projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: unset;
@@ -1642,7 +1642,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.futur-projects .container .projects-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     gap: unset;
@@ -1656,7 +1656,7 @@ body::-webkit-scrollbar-thumb {
 .section.futur-projects .container .project-container {
   width: 45%;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.futur-projects .container .project-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     width: 75%;
@@ -1674,25 +1674,25 @@ body::-webkit-scrollbar-thumb {
   height: 300px;
   width: 100%;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .section.futur-projects .container .project-img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 19rem;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .section.futur-projects .container .project-img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 25rem;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .section.futur-projects .container .project-img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 25rem;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .section.futur-projects .container .project-img-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 25rem;
@@ -1726,14 +1726,14 @@ body::-webkit-scrollbar-thumb {
   z-index: 20;
   transition: 0.5s;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .main-container .main {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform-origin: left;
     transform-style: preserve-3d;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .main-container .main {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform-origin: left;
@@ -1748,13 +1748,13 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(135deg, #ffc524 0%, #d88220 74%);
   overflow-x: hidden;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform-style: preserve-3d;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .screen-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     transform-style: preserve-3d;
@@ -1770,13 +1770,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #14171c;
   min-height: 100vh;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container .page {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding-bottom: 0 !important;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .screen-container .page {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding-bottom: 0 !important;
@@ -1973,13 +1973,13 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .screen-container .nav-mobile .nav-items {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .screen-container .nav-mobile .nav-items {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     justify-content: space-evenly;
@@ -2022,13 +2022,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #fbb03b;
   width: 0;
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .screen-container .nav-mobile .progress-bar .progressed-mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .screen-container .nav-mobile .progress-bar .progressed-mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
@@ -2043,7 +2043,7 @@ body::-webkit-scrollbar-thumb {
 .screen-container .nav-desktop {
   display: none;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
   }
@@ -2059,19 +2059,19 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) and (min-width: calc(1400px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) and (min-width: calc(1400px + 0.01px)) {
   .screen-container .nav-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     right: 20%;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container .nav-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     right: 17%;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container .nav-desktop .nav-items {
     list-style-type: none;
     display: flex;
@@ -2155,7 +2155,7 @@ body::-webkit-scrollbar-thumb {
     animation: appear-links 0.5s forwards ease var(--i);
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .screen-container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
   }
@@ -2171,19 +2171,19 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) and (min-width: calc(1400px + 0.01px)) {
   .screen-container .nav-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     right: 20%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .screen-container .nav-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     right: 17%;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .screen-container .nav-desktop .nav-items {
     list-style-type: none;
     display: flex;
@@ -2286,25 +2286,25 @@ body::-webkit-scrollbar-thumb {
 .page-content .section > .container {
   margin: 0 auto;
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .page-content .section > .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 1140px;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .page-content .section > .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 1080px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .page-content .section > .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 1000px;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .page-content .section > .container {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     max-width: 750px;
@@ -2363,13 +2363,13 @@ body::-webkit-scrollbar-thumb {
 .main-hero .overlay .inner .btns-desktop {
   display: none;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .main-hero .overlay .inner .btns-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: inline-flex;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .main-hero .overlay .inner .btns-desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: inline-flex;
@@ -2378,37 +2378,37 @@ body::-webkit-scrollbar-thumb {
 .main-hero .overlay .inner .btns-mobile {
   display: inline-flex;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .main-hero .overlay .inner .btns-mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .main-hero .overlay .inner .btns-mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .main-hero .overlay .inner .btns {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .main-hero .overlay .inner .btns {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .main-hero .overlay .inner .btns {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .main-hero .overlay .inner .btns {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     flex-direction: row;
@@ -2423,7 +2423,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   background: url(/data/img/bg.jpg) no-repeat top center/cover fixed;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .hero {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: unset;
@@ -2451,7 +2451,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   padding: 0 2rem;
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .hero .overlay .inner {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     margin: 120px 0 70px;
@@ -2473,7 +2473,7 @@ body::-webkit-scrollbar-thumb {
 body .screen-container .content .header {
   display: none;
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
   }
@@ -2504,19 +2504,19 @@ body .screen-container .content .header {
     margin: auto;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body .screen-container .header .menu {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding: 10px 2rem;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) and (min-width: calc(1400px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) and (min-width: calc(1400px + 0.01px)) {
   body .screen-container .header .menu {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding: 10px 2rem;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body .screen-container .header .menu .logo .logo-svg {
     fill: #fff;
     width: 100px;
@@ -2588,7 +2588,7 @@ body .screen-container .content .header {
     transform: rotate(-45deg) translateY(0);
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   body {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
   }
@@ -2619,19 +2619,19 @@ body .screen-container .content .header {
     margin: auto;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body .screen-container .header .menu {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding: 10px 2rem;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) and (min-width: calc(1400px + 0.01px)) {
   body .screen-container .header .menu {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     padding: 10px 2rem;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   body .screen-container .header .menu .logo .logo-svg {
     fill: #fff;
     width: 100px;
@@ -2814,7 +2814,7 @@ body.loading .loading-screen {
     display: flex;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   body.device--desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     overflow: hidden;
@@ -2823,7 +2823,7 @@ body.loading .loading-screen {
     display: flex;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   body.device--desktop {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     overflow: hidden;
@@ -2832,7 +2832,7 @@ body.loading .loading-screen {
     display: flex;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   body.device--mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     overflow: hidden;
@@ -2841,7 +2841,7 @@ body.loading .loading-screen {
     display: flex;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   body.device--mobile {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     overflow: hidden;
@@ -2855,14 +2855,14 @@ body.loading .loading-screen {
   margin: auto;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 1200px) and (min-width: calc(1023px + .01px)) {
+@media screen and (max-width: 1200px) and (min-width: calc(1023px + 0.01px)) {
   .page.cv-page .section.cv-dl-n-show .cv-container .cv-embed {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 1112px;
     display: none;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: calc(767px + .01px)) {
+@media screen and (max-width: 1023px) and (min-width: calc(767px + 0.01px)) {
   .page.cv-page .section.cv-dl-n-show .cv-container .cv-embed {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     height: 1112px;
@@ -2876,13 +2876,13 @@ body.loading .loading-screen {
     display: none;
   }
 }
-@media screen and (min-width: calc(1400px + .01px)) {
+@media screen and (min-width: calc(1400px + 0.01px)) {
   .page.cv-page .section.cv-dl-n-show .cv-container .cv-img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: calc(1200px + .01px)) {
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
   .page.cv-page .section.cv-dl-n-show .cv-container .cv-img {
     transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
     display: none;
