@@ -23,6 +23,7 @@
         <h4 class="text">PHP - Laravel - SQL</h4>
       </div>
     </div>
+    <?php /*
     <div class="skills-section">
       <div class="img-container">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="img">
@@ -34,6 +35,7 @@
         <h4 class="text">WordPress - Elementor - WooCommerce</h4>
       </div>
     </div>
+    */ ?>
     <div class="skills-section">
       <div class="img-container">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="img">
