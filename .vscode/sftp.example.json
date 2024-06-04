@@ -5,7 +5,7 @@
     "port": 21,
     "username": "",
     "password": "",
-    "remotePath": "/mathisgasparotto.me/",
+    "remotePath": "/public_html/",
     "uploadOnSave": false,
     "useTempFile": true,
     "openSsh": true,
