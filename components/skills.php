@@ -9,7 +9,7 @@
       </div>
       <div class="skill-content">
         <h3 class="title">Développement front-end</h3>
-        <h4 class="text">HTML - CSS - JS - jQuery - Vue.js</h4>
+        <h4 class="text">VueJS - Quasar</h4>
       </div>
     </div>
     <div class="skills-section">
@@ -20,7 +20,18 @@
       </div>
       <div class="skill-content">
         <h3 class="title">Développement back-end</h3>
-        <h4 class="text">PHP - Laravel - SQL</h4>
+        <h4 class="text">Symfony - Laravel - SQL</h4>
+      </div>
+    </div>
+    <div class="skills-section">
+      <div class="img-container">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="img">
+          <path d="M41.9,-68.5C55.1,-65,66.9,-55.3,70.8,-42.8C74.6,-30.3,70.3,-15.2,69.7,-0.4C69,14.4,71.9,28.8,67.6,40.4C63.3,52,51.7,60.8,39.3,69.7C26.8,78.5,13.4,87.5,2.2,83.7C-8.9,79.8,-17.9,63.1,-31.4,54.8C-44.9,46.6,-62.9,46.7,-73.8,38.9C-84.6,31.2,-88.3,15.6,-83.8,2.6C-79.2,-10.3,-66.5,-20.7,-56.8,-30.5C-47.2,-40.3,-40.6,-49.7,-31.7,-55.6C-22.7,-61.6,-11.4,-64.1,1.5,-66.7C14.4,-69.4,28.8,-72.1,41.9,-68.5Z" transform="translate(100 100), scale(1.17)" />
+        </svg>
+      </div>
+      <div class="skill-content">
+        <h3 class="title">DevOps</h3>
+        <h4 class="text">Docker - Linux - Bash</h4>
       </div>
     </div>
     <?php /*
@@ -35,7 +46,6 @@
         <h4 class="text">WordPress - Elementor - WooCommerce</h4>
       </div>
     </div>
-    */ ?>
     <div class="skills-section">
       <div class="img-container">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="img">
@@ -47,5 +57,6 @@
         <h4 class="text">Photoshop - Illustrator - InDesign - XD - Premiere Pro - After Affects</h4>
       </div>
     </div>
+    */ ?>
   </div>
 </section>
