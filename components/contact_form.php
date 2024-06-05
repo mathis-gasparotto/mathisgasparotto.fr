@@ -1,10 +1,10 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\Exception;
 // use PHPMailer\PHPMailer\SMTP;
 
 require ( ROOT . 'vendor/phpmailer/phpmailer/src/PHPMailer.php' );
-require ( ROOT . 'vendor/phpmailer/phpmailer/src/Exception.php' );
+// require ( ROOT . 'vendor/phpmailer/phpmailer/src/Exception.php' );
 // require ( ROOT . 'vendor/phpmailer/phpmailer/src/SMTP.php' );
 
 $phpmailer = new PHPMailer(true);
@@ -35,29 +35,31 @@ if (!empty($_POST)) {
   }
   if (empty($errors)) {
     
-    $phpmailer->setFrom('no-reply@mathisgasparotto.me', trim($_POST["fname"]) . " " . trim($_POST["lname"]));
+    $phpmailer->setFrom('no-reply@mathisgasparotto.fr', $fname . " " . $lname);
 
-    $phpmailer->AddReplyTo(trim($_POST["email"]), trim($_POST["fname"]) . " " . trim($_POST["lname"]));
+    $phpmailer->AddReplyTo($email, $fname . " " . $lname);
     
     $phpmailer->AddAddress('mathis.gasparotto@hotmail.com', 'Mathis Gasparotto');
     
-    $phpmailer->Subject    =  trim($_POST["subject"]) . " - " . trim($_POST["fname"]) . " " . trim($_POST["lname"]) . " (from mathisgasparotto.fr)";
+    $phpmailer->Subject    =  $subject . " - " . $fname . " " . $lname . " (from mathisgasparotto.fr)";
     $phpmailer->WordWrap   = 50;
     $phpmailer->IsHTML(true);
     $phpmailer->MsgHTML('
-    <div><b>Nom : </b>'.trim($_POST["lname"]).'</div>
-    <div><b>Pr&eacute;nom : </b>'.trim($_POST["fname"]).'</div>
-    <div><b>Email : </b><a href="mailto:'.trim($_POST["email"]).'">'.trim($_POST["email"]).'</a></div>
-    <div><b>Objet : </b>'.trim($_POST["subject"]).'</div>
+    <div><b>Nom : </b>'.$lname.'</div>
+    <div><b>Pr&eacute;nom : </b>'.$fname.'</div>
+    <div><b>Email : </b><a href="mailto:'.$email.'">'.$email.'</a></div>
+    <div><b>Objet : </b>'.$subject.'</div>
     <div><b>Message :</b></div>
-    <div><p style="margin:0;">'. preg_replace("/\r\n|\r|\n/", '</p><p>', trim($_POST["message"])) .'</p></div>
+    <div><p style="margin:0;">'. preg_replace("/\r\n|\r|\n/", '</p><p>', $message) .'</p></div>
     ');
-    $phpmailer->AltBody = trim($_POST["message"]);
+    $phpmailer->AltBody = $message;
     
     if (!$phpmailer->send()) {
       $sendError = $phpmailer->ErrorInfo;
     } else{
       $sendSuccess = 'Message bien envoyé';
+      unset($_POST);
+      header("Location: " . $_SERVER['PHP_SELF']);
     }
   }
 } 
