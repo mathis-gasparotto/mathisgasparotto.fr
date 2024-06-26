@@ -1,9 +1,9 @@
-name: Deploy to FTP Server for Production
+name: Deploy to FTP Server for Staging
 
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   ftp-deploy:
@@ -20,10 +20,9 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password:  ${{ secrets.FTP_PASSWORD }}
         local-dir: './'
-        server-dir: ${{ vars.FTP_PROD_DIRECTORY }}
+        server-dir: ${{ vars.FTP_STAGING_DIRECTORY }}
         protocol: ${{ vars.FTP_PROTOCOL }}
         port: ${{ vars.FTP_PORT }}
-        dangerous-clean-slate: true
         exclude: |
           **/.git*
           **/.git*/**
