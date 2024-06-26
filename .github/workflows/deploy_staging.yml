@@ -33,4 +33,4 @@ jobs:
           **/node_modules/**
           **/.trash/**
           **/.vscode/**
-          README.MD
+          README.md
