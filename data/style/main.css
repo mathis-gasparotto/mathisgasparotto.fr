@@ -2365,7 +2365,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .main-hero .overlay .inner {
-  max-width: 35rem;
+  max-width: 40rem;
   text-align: center;
   color: #fff;
   padding: 0 2rem;
