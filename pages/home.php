@@ -3,7 +3,7 @@
   <?php
 
   $first_word_h1 = "Développeur";
-  $second_word_h1 = "Web";
+  $second_word_h1 = "Full-Stack";
 
   require ( ROOT . 'components/layouts/main_hero.php' );
   ?>
