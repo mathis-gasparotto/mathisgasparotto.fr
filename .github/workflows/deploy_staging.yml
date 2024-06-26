@@ -33,4 +33,6 @@ jobs:
           **/node_modules/**
           **/.trash/**
           **/.vscode/**
+          composer.*
+          package.*
           README.md
