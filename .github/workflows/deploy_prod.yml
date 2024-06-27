@@ -6,33 +6,55 @@ on:
       - master
 
 jobs:
-  ftp-deploy:
+  build: 
     runs-on: ubuntu-latest
+    if: |
+      !contains(github.event.head_commit.message, '[skip cd]')
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Install Composer dependencies
-      run: composer install --no-dev --optimize-autoloader
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader
 
-    - name: Upload to FTP server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password:  ${{ secrets.FTP_PASSWORD }}
-        local-dir: './'
-        server-dir: ${{ vars.FTP_PROD_DIRECTORY }}
-        protocol: ${{ vars.FTP_PROTOCOL }}
-        port: ${{ vars.FTP_PORT }}
-        dangerous-clean-slate: true
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.trash/**
-          **/.vscode/**
-          composer.*
-          package.*
-          README.md
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4
+        with:
+          name: php-app
+          path: .
+  
+  deploy:
+    runs-on: ubuntu-latest
+    if: |
+      !contains(github.event.head_commit.message, '[skip cd]')
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ vars.DEPLOY_URL }}
+
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: php-app
+
+      - name: Upload to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password:  ${{ secrets.FTP_PASSWORD }}
+          local-dir: './'
+          server-dir: ${{ vars.FTP_DIRECTORY }}
+          protocol: ${{ vars.FTP_PROTOCOL }}
+          port: ${{ vars.FTP_PORT }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.trash/**
+            **/.vscode/**
+            composer.*
+            package.*
+            README.md
