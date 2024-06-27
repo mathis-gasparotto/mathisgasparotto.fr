@@ -32,8 +32,14 @@
           margin: 2rem 0;
         }
       }
-      .btn:hover {
-        @include lite-white-shadow-btn;
+      .btn {
+        display: none;
+        @include media(laptop, desktop) {
+          display: inline-block;
+        }
+        &:hover {
+          @include lite-white-shadow-btn;
+        }
       }
     }
   }

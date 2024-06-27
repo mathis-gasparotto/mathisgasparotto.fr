@@ -1407,6 +1407,21 @@ body::-webkit-scrollbar-thumb {
     margin: 2rem 0;
   }
 }
+.section.who .container .content-container .btn {
+  display: none;
+}
+@media screen and (max-width: 1400px) and (min-width: calc(1200px + 0.01px)) {
+  .section.who .container .content-container .btn {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: calc(1400px + 0.01px)) {
+  .section.who .container .content-container .btn {
+    transition: all 0.4s ease, font-size 0s, background-color 0s, color 0s, top 0s, left 0s, right 0s, bottom 0s;
+    display: inline-block;
+  }
+}
 .section.who .container .content-container .btn:hover {
   box-shadow: 0px 0px 9px 2px rgba(156, 156, 156, 0.25);
 }
