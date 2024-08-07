@@ -1061,7 +1061,8 @@ body::-webkit-scrollbar-thumb {
 }
 .section.projects .container .projects-container .project-container .img-container:hover .img {
   transform: scale(1.08);
-  transition: transform 0.5s ease-in-out;
+  filter: blur(0px) brightness(0.7);
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 .section.projects .container .projects-container .project-container .img-container .title {
   position: absolute;
@@ -1073,7 +1074,7 @@ body::-webkit-scrollbar-thumb {
 }
 .section.projects .container .projects-container .project-container .img-container .img {
   transition: transform 0.5s ease-in-out;
-  filter: blur(1px) brightness(0.3);
+  filter: blur(1px) brightness(0.5);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

@@ -29,6 +29,15 @@ $projects = [
     'img_title' => "Illustration du projet Gymy",
     'link' => "https://gymy-f709a.web.app/",
   ],
+  [
+    'title' => "Montage vidéo", 
+    'text' => "Lors d'un projet d'école visant à travailler pendant 1 semaine pour un client réel, notre mission était de faire, pour une association, une application permettant de faire un montage vidéo automatique de photos et vidéos stockées sur un Google Drive. Dans ce projet, je me suis occupé de la partie génération du montage vidéo, et pour cela, j'ai tout d'abord utilisé Electron pour en faire une application installable au format desktop, afin que l'association n'ait pas besoin de payer un hébergement. Puis, en ce qui concerne la génération de la vidéo, j'ai utilisé FFmpeg sous la librairie JavaScript fluent-ffmpeg (qui permet d'utiliser les commandes de FFmpeg au format JavaScript).<br/>
+    En ce qui concerne la récupération des contenus depuis le Google Drive, mes collègues ont utilisé la librairie JavaScript de Google.",
+    'img_url' => "/data/img/application-de-montage-video-automatique-electron-mathis-gasparotto.jpg",
+    'img_alt' => "application-de-montage-video-automatique-electron-mathis-gasparotto",
+    'img_title' => "Illustration du projet de montage vidéo",
+    'link' => "https://github.com/mathis-gasparotto/mds-2023-workshop-client",
+  ],
 ];
 ?>
 
