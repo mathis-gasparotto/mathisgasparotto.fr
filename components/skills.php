@@ -9,7 +9,7 @@
       </div>
       <div class="skill-content">
         <h3 class="title">Développement front-end</h3>
-        <h4 class="text">VueJS - Quasar</h4>
+        <h4 class="text">React - React Native - VueJS - Quasar - Angular</h4>
       </div>
     </div>
     <div class="skills-section">
@@ -20,7 +20,7 @@
       </div>
       <div class="skill-content">
         <h3 class="title">Développement back-end</h3>
-        <h4 class="text">Symfony - Laravel - SQL</h4>
+        <h4 class="text">Symfony - API Platform - Laravel - Firebase - NestJS - MySQL - PostgreSQL - MongoDB</h4>
       </div>
     </div>
     <div class="skills-section">

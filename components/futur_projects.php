@@ -5,8 +5,8 @@
       <?php /* <a class="first project-container" href="#"> */ ?>
       <div class="first project-container">
         <div class="project-img-container">
-          <img src="/data/img/application-avec-ia-mathis-gasparotto-web-developpeur-quasar-api-platform-symfony-projet-en-cours.jpg" alt="application-avec-ia-mathis-gasparotto-web-developpeur-quasar-api-platform-symfony-projet-en-cours" title="Illustration du projet en cours d'application avec consommation d'IA sous Quasar, API Platform et Symfony" class="project-img img" loading="lazy" />
-          <h3 class="project-title">Application avec IA</h3>
+          <img src="/data/img/application-de-sport-mathis-gasparotto-web-developpeur-projet.jpg" alt="application-de-sport-mathis-gasparotto-web-developpeur-projet" title="Illustration du projet d'application de suivi des séances de sport" class="project-img img" loading="lazy" />
+          <h3 class="project-title">Gymy</h3>
         </div>
       </div>
       <?php /* <a class="second project-container" href="#"> */ ?>
